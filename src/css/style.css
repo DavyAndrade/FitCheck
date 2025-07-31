@@ -1,27 +1,53 @@
 body {
     font-size: 1.5rem;
     line-height: 1.5;
-}
-
-.navbar {
-    background-color: rgb(2, 122, 170);
-    font-size: 2rem;
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft ft ft";
+    min-height: 100vh;
     color: #fff;
 }
 
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.header {
+    grid-area: hd;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    min-height: 25vh;
 }
 
-.navbar li {
-    display: inline;
-    margin-inline: 3rem;
+.main {
+    grid-area: mn;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #333;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
+.sidebar {
+    grid-area: sb;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #555;
+}
+
+.footer {
+    grid-area: ft;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    background-color: #777;
 }
