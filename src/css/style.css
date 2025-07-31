@@ -1,0 +1,27 @@
+body {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.navbar {
+    background-color: rgb(2, 122, 170);
+    font-size: 2rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-inline: 3rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
