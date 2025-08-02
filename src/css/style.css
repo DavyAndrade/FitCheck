@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
+    font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
     display: grid;
@@ -12,14 +15,65 @@ body {
     color: #fff;
 }
 
+/* Navigation Bar */
+
 .header {
     grid-area: hd;
+    min-height: 20vh;
+}
+
+.navbar {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #111;
-    min-height: 25vh;
+    flex-flow: row;
+    height: 100%;
+    background-color: #0000E0;
+    padding-inline: 1rem;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-inline: 1rem;
+}
+
+.navbar-logo-image {
+    width: 64px;
+    height: 64px;
+    margin-right: 1rem;
+}
+
+.navbar-logo-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar-item {
+    font-size: 2rem;
+    display: inline;
+    margin-inline: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a:hover, .navbar a:focus {
+    color: hsl(0, 0%, 75%);
+    text-decoration: underline;
 }
 
 .main {
