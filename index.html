@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitCheck</title>
+    <title>FitCheck | Home</title>
     <link rel="icon" type="image/x-icon" href="./public/FitCheck-logo.svg">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/home.css">
@@ -19,9 +19,9 @@
             </a>
             <ul class="navbar-list">
                 <li class="navbar-item"><a href="index.html">Início</a></li>
-                <li class="navbar-item"><a href="#">Calculadora IMC</a></li>
-                <li class="navbar-item"><a href="#">Peso Ideal</a></li>
-                <li class="dropdown" tabindex="0">
+                <li class="navbar-item"><a href="index.html">Calculadora IMC</a></li>
+                <li class="navbar-item"><a href="index.html">Peso Ideal</a></li>
+                <li class="navbar-item dropdown" tabindex="0">
                     <span>Mais Cálculos <i class="fa-solid fa-chevron-down fa-2xs"></i></span>
 
                     <div class="dropdown-content">
@@ -79,42 +79,48 @@
                 </article>
             </div>
         </section>
+
         <section class="about-section">
-            <h2>Sobre o FitCheck</h2>
-            <p>Sua ferramenta confiável para monitoramento de saúde</p>
+            <h2 class="about-title">Sobre o FitCheck</h2>
+            <p class="about-description">Sua ferramenta confiável para monitoramento de saúde</p>
 
-            <article>
-                <h3>Nossa Missão</h3>
-                <p>O FitCheck foi desenvolvido para tornar o monitoramento da saúde mais acessível e simples.
-                    Acreditamos
-                    que todos devem
-                    ter acesso a ferramentas confiáveis para cuidar do próprio bem-estar.</p>
-            </article>
+            <div class="card-container">
+                <article class="about-card">
+                    <h3 class="card-title">Nossa Missão</h3>
+                    <p class="card-description">O FitCheck foi desenvolvido para tornar o monitoramento da saúde mais
+                        acessível e simples.
+                        Acreditamos
+                        que todos devem
+                        ter acesso a ferramentas confiáveis para cuidar do próprio bem-estar.</p>
+                </article>
 
-            <article>
-                <h3>Tecnologia Confiável</h3>
-                <p>Nossos cálculos são baseados em fórmulas médicas reconhecidas internacionalmente, garantindo
-                    resultados
-                    precisos e
-                    confiáveis para orientar suas decisões de saúde.</p>
-            </article>
+                <article class="about-card">
+                    <h3 class="card-title">Tecnologia Confiável</h3>
+                    <p class="card-description">Nossos cálculos são baseados em fórmulas médicas reconhecidas
+                        internacionalmente, garantindo
+                        resultados
+                        precisos e
+                        confiáveis para orientar suas decisões de saúde.</p>
+                </article>
 
-            <article>
-                <h3>Expansão Futura</h3>
-                <p>Estamos constantemente trabalhando para adicionar novas funcionalidades, como calculadoras de taxa
-                    metabólica basal e
-                    hidratação, para oferecer uma experiência ainda mais completa.</p>
-            </article>
+                <article class="about-card">
+                    <h3 class="card-title">Expansão Futura</h3>
+                    <p class="card-description">Estamos constantemente trabalhando para adicionar novas funcionalidades,
+                        como calculadoras de taxa
+                        metabólica basal e
+                        hidratação, para oferecer uma experiência ainda mais completa.</p>
+                </article>
 
-            <article>
-                <h3>Ferramentas Disponíveis</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, fugiat nihil neque nulla excepturi
-                    at?
-                    Tempore nam dolorem quasi sequi quia quo, aliquid magni animi fugiat nesciunt, repellendus nulla
-                    labore!
-                </p>
-            </article>
-
+                <article class="about-card tools">
+                    <h3 class="card-title">Ferramentas Disponíveis</h3>
+                    <ul>
+                        <li class="active"><i class="fa-solid fa-check"></i>Calculadora de IMC</li>
+                        <li class="active"><i class="fa-solid fa-check"></i>Calculadora de Peso Ideal</li>
+                        <li class="soon"><i class="fa-solid fa-clock"></i>Taxa Metabólica Basal (em breve)</li>
+                        <li class="soon"><i class="fa-solid fa-clock"></i>Calculadora de Hidratação (em breve)</li>
+                    </ul>
+                </article>
+            </div>
         </section>
     </main>
     <footer class="footer">

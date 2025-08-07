@@ -17,7 +17,10 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 64px;
+    line-height: 1.5;
+    width: 100%;
 }
 
 /* Begin Navbar Style */
@@ -60,6 +63,7 @@ body {
 .navbar-list .navbar-item a {
     text-decoration: none;
     color: var(--dark-color);
+    padding: 0.5rem;
 }
 
 .navbar-item a:hover,
@@ -82,7 +86,7 @@ body {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     left: -5rem;
-    top: 1.15rem;
+    top: 2rem;
 }
 
 .dropdown:hover .dropdown-content,
@@ -221,9 +225,9 @@ body {
     text-align: center;
     background-color: #fff;
     border-radius: 0.5rem;
-    padding: 1.5rem;
     width: 350px;
     gap: 1rem;
+    line-height: 1.5;
 }
 
 .feature-card i {
@@ -245,10 +249,90 @@ body {
     align-items: center;
     flex-flow: column wrap;
     background-color: #fff;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 2rem;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+}
+
+.about-section .about-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 450px;
+}
+
+.about-section h2,
+.about-section h3 {
+    color: var(--dark-color);
+}
+
+.about-description,
+.card-description {
+    color: #6B7280;
+}
+
+.card-description {
+    max-width: 400px;
+}
+
+.tools {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.tools .card-title, .tools .active {
+    color: #fff;
+}
+
+.active i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 0.9rem;
+}
+
+.soon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 0.9rem;
+}
+
+.tools ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.tools ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tools .soon {
+    color: #9CA3AF;
+}
 
 /* End Main Style */
 
@@ -257,9 +341,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     background-color: var(--dark-color);
     color: var(--primary-color);
     padding: 2rem;
 }
-
 /* End Footer Style */
