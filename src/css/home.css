@@ -179,6 +179,7 @@ body {
 
 .hero-buttons .secondary-btn {
     border: 1px solid #fff;
+    background-color: transparent;
     color: #fff;
 }
 
