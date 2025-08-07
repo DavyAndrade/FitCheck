@@ -5,38 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitCheck</title>
-    <link rel="icon" type="image/x-icon" href="./public/FitCheckWhite16x16.png">
+    <link rel="icon" type="image/x-icon" href="./public/FitCheck-logo.svg">
     <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/home.css">
+    <script src="https://kit.fontawesome.com/bd8d2ac3c9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="navbar-logo">
-                <figure>
-                    <img src="./public/FitCheckWhite512x512.png" alt="FitCheck Logo" class="navbar-logo-image"
-                        width="64" height="64" title="FitCheck Logo">
-                    <figcaption class="navbar-logo-caption">FitCheck</figcaption>
-                </figure>
-
-                <span class="navbar-logo-text">FitCheck</span>
+                <i class="fa-solid fa-heart-pulse"></i> FitCheck
             </a>
             <ul class="navbar-list">
-                <li class="navbar-item"><a href="index.html">Home</a></li>
-                <li class="navbar-item"><a href="imc.html">IMC</a></li>
-                <li class="navbar-item"><a href="pesoIdeal.html">Peso Ideal</a></li>
+                <li class="navbar-item"><a href="index.html">Início</a></li>
+                <li class="navbar-item"><a href="#">Calculadora IMC</a></li>
+                <li class="navbar-item"><a href="#">Peso Ideal</a></li>
+                <li class="dropdown" tabindex="0">
+                    <span>Mais Cálculos <i class="fa-solid fa-chevron-down fa-2xs"></i></span>
+
+                    <div class="dropdown-content">
+                        <p class="dropdown-soon">Em breve:</p>
+                        <p class="dropdown-item">• Taxa Metabólica Basal</p>
+                        <p class="dropdown-item">• Calculadora de Hidratação</p>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <h1>Main</h1>
+        <section class="hero-section">
+            <h1 class="title">Cuide da sua <span>saúde</span> com o FitCheck</h1>
+            <p class="subtitle">Ferramentas simples e eficazes para monitorar seu bem-estar. Calcule seu IMC e descubra
+                seu peso ideal de
+                forma rápida e
+                precisa.</p>
+            <div>
+
+            </div>
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="window.location.href='index.html'">Calcular IMC</button>
+                <button class="secondary-btn" onclick="window.location.href='index.html'">Peso Ideal</button>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h2 class="title">Por que escolher o FitCheck?</h2>
+            <p>Ferramentas confiáveis baseadas em padrões médicos internacionais</p>
+            <div class="features-container">
+                <article class="feature-card">
+                    <div>
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="feature-title">Cálculo Preciso</h3>
+                    <p>Algoritmos baseados em padrões da OMS para resultados confiáveis e
+                        precisos.</p>
+                </article>
+                <article class="feature-card">
+                    <div>
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Rápido e Fácil</h3>
+                    <p>Interface intuitiva que permite cálculos instantâneos com apenas
+                        alguns cliques.</p>
+                </article>
+                <article class="feature-card">
+                    <div>
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <h3 class="feature-title">100% Seguro</h3>
+                    <p>Seus dados não são armazenados. Todos os cálculos são feitos
+                        localmente no seu dispositivo.</p>
+                </article>
+            </div>
+        </section>
+        <section class="about-section">
+            <h2>Sobre o FitCheck</h2>
+            <p>Sua ferramenta confiável para monitoramento de saúde</p>
+
+            <article>
+                <h3>Nossa Missão</h3>
+                <p>O FitCheck foi desenvolvido para tornar o monitoramento da saúde mais acessível e simples.
+                    Acreditamos
+                    que todos devem
+                    ter acesso a ferramentas confiáveis para cuidar do próprio bem-estar.</p>
+            </article>
+
+            <article>
+                <h3>Tecnologia Confiável</h3>
+                <p>Nossos cálculos são baseados em fórmulas médicas reconhecidas internacionalmente, garantindo
+                    resultados
+                    precisos e
+                    confiáveis para orientar suas decisões de saúde.</p>
+            </article>
+
+            <article>
+                <h3>Expansão Futura</h3>
+                <p>Estamos constantemente trabalhando para adicionar novas funcionalidades, como calculadoras de taxa
+                    metabólica basal e
+                    hidratação, para oferecer uma experiência ainda mais completa.</p>
+            </article>
+
+            <article>
+                <h3>Ferramentas Disponíveis</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, fugiat nihil neque nulla excepturi
+                    at?
+                    Tempore nam dolorem quasi sequi quia quo, aliquid magni animi fugiat nesciunt, repellendus nulla
+                    labore!
+                </p>
+            </article>
+
+        </section>
     </main>
-    <aside class="sidebar">
-        <h1>Sidebar</h1>
-    </aside>
     <footer class="footer">
-        <p>Feito por Davy Andrade, 2025. Todos os direitos reservados.</p>
+        <h1>Footer</h1>
     </footer>
     <script src="./src/js/script.js"></script>
 </body>
