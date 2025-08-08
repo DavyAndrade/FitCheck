@@ -1,0 +1,2 @@
+- Organizar arquivos de CSS para melhor leitura.
+- Ajustar tamanho de fontes da Landing Page
