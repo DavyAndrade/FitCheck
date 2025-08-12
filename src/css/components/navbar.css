@@ -73,7 +73,7 @@
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     left: -5rem;
-    top: 2rem;
+    top: 1.5rem;
 }
 
 .dropdown:hover .dropdown-content,
@@ -103,4 +103,22 @@
 .dropdown-icon:focus {
     cursor: pointer;
     color: var(--primary-color);
+}
+
+#navbar__mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #navbar--desktop {
+        display: none;
+    }
+
+    #navbar--mobile {
+        display: block;
+    }
+    
+    .navbar {
+        padding-inline: 16px;
+    }
 }

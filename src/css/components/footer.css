@@ -98,11 +98,23 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    gap: 0.5rem;
     border-top: 1px solid #374151;
     padding-top: 1.5rem;
 }
 
 .footer-copyright p {
     color: #9CA3AF;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
 }

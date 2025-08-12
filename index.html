@@ -15,14 +15,14 @@
 
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" id="navbar--desktop">
             <a href="index.html" class="navbar-logo">
                 <i class="fa-solid fa-heart-pulse"></i> FitCheck
             </a>
             <ul class="navbar-list">
                 <li class="navbar-item"><a href="index.html">Início</a></li>
-                <li class="navbar-item"><a href="index.html">Calculadora IMC</a></li>
-                <li class="navbar-item"><a href="index.html">Peso Ideal</a></li>
+                <li class="navbar-item"><a href="imc.html">Calculadora IMC</a></li>
+                <li class="navbar-item"><a href="pesoIdeal.html">Peso Ideal</a></li>
                 <li class="navbar-item dropdown" tabindex="0">
                     <span>Mais Cálculos <i class="fa-solid fa-chevron-down fa-2xs"></i></span>
 
@@ -34,7 +34,16 @@
                 </li>
             </ul>
         </nav>
+
+        <nav class="navbar" id="#navbar--mobile">
+            <a href="index.html" class="navbar-logo">
+                <i class="fa-solid fa-heart-pulse"></i> FitCheck
+            </a>
+            
+            <i class="fa-solid fa-bars" tabindex="0"></i>
+        </nav>
     </header>
+
     <main class="main">
         <section class="hero-section">
             <h1 class="title">Cuide da sua <span>saúde</span> com o FitCheck</h1>
@@ -46,8 +55,8 @@
 
             </div>
             <div class="hero-buttons">
-                <button class="primary-btn" onclick="window.location.href='index.html'">Calcular IMC</button>
-                <button class="secondary-btn" onclick="window.location.href='index.html'">Peso Ideal</button>
+                <button class="primary-btn" onclick="window.location.href='imc.html'">Calcular IMC</button>
+                <button class="secondary-btn" onclick="window.location.href='pesoIdeal.html'">Peso Ideal</button>
             </div>
         </section>
 
@@ -120,6 +129,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <section class="footer-info">
             <h3>FitCheck</h3>
@@ -156,6 +166,7 @@
             <p>© 2025 FitCheck. Todos os direitos reservados. Desenvolvido para fins educacionais.</p>
         </div>
     </footer>
+
     <script src="./src/js/script.js"></script>
 </body>
 
