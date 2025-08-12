@@ -121,3 +121,16 @@ table {
     white-space: nowrap;
     border: 0;
 }
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    line-height: 1.5;
+    width: 100%;
+}

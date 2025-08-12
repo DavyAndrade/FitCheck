@@ -1,2 +1,1 @@
-- Organizar arquivos de CSS para melhor leitura.
-- Ajustar tamanho de fontes da Landing Page
+- Implementar nomenclatura BEM no CSS para melhor leitura/documentação.
