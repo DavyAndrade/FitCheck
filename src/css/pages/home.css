@@ -216,11 +216,11 @@
 
 .tools .soon i {
     background-color: var(--primary-color);
+    opacity: 0.5;
 }
 
 .tools .soon {
     color: #fff;
-    opacity: 0.75;
 }
 
 .tools ul {

@@ -110,12 +110,12 @@
 }
 
 @media (max-width: 768px) {
-    #navbar--desktop {
+    #navbar__desktop {
         display: none;
     }
 
-    #navbar--mobile {
-        display: block;
+    #navbar__mobile {
+        display: flex;
     }
     
     .navbar {
