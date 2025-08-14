@@ -1,10 +1,11 @@
 # FitCheck — Sua Ferramenta de Saúde 🏥
 Descrição em Desenvolvimento!
 
-# Tecnologias Utilizadas 🖥️
+# Ferramentas Utilizadas 🖥️
 - HTML
 - CSS
 - JavaScript
+- FontAwesome
 
 # Objetivo 📌
 Disponibilizar cálculos para o monitoramento da saúde e do bem-estar de forma simples e acessível.
