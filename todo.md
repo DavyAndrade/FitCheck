@@ -1,10 +1,11 @@
 # Navbar
-- Responsibilidade para Tamanhos Maiores
+- Responsibilidade (Tablet, Desktop, Large Desktops)
 - Consertar Hamburguer Menu
 
 # Home
-- Features Section
-- About Section
+- Hero Section (Tablet, Desktop, Large Desktop)
+- Features Section (Tablet, Desktop, Large Desktop)
+- About Section (Mobile, Tablet, Desktop, Large Desktop)
 
 # Footer
 - Abordar com aproximação Mobile-First
