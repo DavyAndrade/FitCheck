@@ -8,7 +8,8 @@
 - About Section (Tablet, Desktop, Large Desktop)
 
 # Footer
-- Abordar com aproximação Mobile-First
+- Responsibilidade (Tablet, Desktop, Large Desktop)
+- Realizar a limpeza de CSS com estilizações semelhantes (?)
 
 # Geral
 - Implementar nomenclatura BEM no CSS para melhor leitura/documentação.

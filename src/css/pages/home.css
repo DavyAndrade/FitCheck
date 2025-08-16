@@ -94,7 +94,7 @@
 }
 
 .features__description {
-    color: #6B7280;
+    color: #4b5563;
     font-size: 1.15rem;
 }
 
@@ -139,7 +139,7 @@
 }
 
 .features__card-description {
-    color: #6B7280;
+    color: #4b5563;
 }
 
 /* About Section */
@@ -152,7 +152,7 @@
 }
 
 .about__description {
-    color: #6B7280;
+    color: #4b5563;
 }
 
 .about__card-container {
@@ -162,6 +162,7 @@
     flex-direction: column;
     gap: 2rem;
     margin-top: 1rem;
+    width: 95%;
 }
 
 .about__card {
@@ -170,10 +171,9 @@
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
-    width: 95%;
+    width: 100%;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.1);
     gap: 0.5rem;
 }
 
@@ -184,7 +184,7 @@
 }
 
 .about__card-description {
-    color: #6B7280;
+    color: #4b5563;
 }
 
 .about__card-container .tools {

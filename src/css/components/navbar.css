@@ -22,13 +22,13 @@
 .navbar__logo {
     font-size: 1.5rem;
     color: var(--primary-color);
-    text-decoration: none;
     font-weight: 700;
 }
 
 .navbar__logo:hover,
 .navbar__logo:focus {
     color: var(--secondary-color);
+    transition: ease 250ms;
 }
 
 .navbar__hamburguer-menu {
@@ -39,6 +39,7 @@
 .navbar__hamburguer-menu:hover,
 .navbar__hamburguer-menu:focus {
     color: var(--primary-color);
+    transition: ease 250ms;
 }
 
 /* Navbar Dropdown */
@@ -62,11 +63,10 @@
 .navbar__dropdown-links {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 .navbar__link {
-    text-decoration: none;
     color: var(--dark-color);
     padding: 0.5rem 0;
     font-weight: 500;
@@ -74,6 +74,7 @@
 
 .navbar__link:hover, .navbar__link:focus {
     color: var(--primary-color);
+    transition: ease 250ms;
 }
 
 .navbar__dropdown-others {
@@ -93,5 +94,6 @@
 }
 
 .navbar__soon-item {
+    font-size: 1rem;
     font-weight: lighter;
 }

@@ -1,10 +1,10 @@
 console.log("Script loaded successfully!");
 
 function exibirDropdown() {
-  var x = document.getElementById("navbar__dropdown");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
+  const dropdownMenu = document.getElementById("navbar__dropdown");
+  if (dropdownMenu.style.display === "flex") {
+    dropdownMenu.style.display = "none";
   } else {
-    x.style.display = "flex";
+    dropdownMenu.style.display = "flex";
   }
 }
