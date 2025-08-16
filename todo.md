@@ -5,7 +5,7 @@
 # Home
 - Hero Section (Tablet, Desktop, Large Desktop)
 - Features Section (Tablet, Desktop, Large Desktop)
-- About Section (Mobile, Tablet, Desktop, Large Desktop)
+- About Section (Tablet, Desktop, Large Desktop)
 
 # Footer
 - Abordar com aproximação Mobile-First
