@@ -20,15 +20,25 @@
                 <i class="fa-solid fa-heart-pulse"></i> FitCheck
             </a>
 
-            <ul id="links">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="imc.html">Calculadora de IMC</a></li>
-                <li><a href="peso-ideal.html">Calculadora de Peso Ideal</a></li>
-            </ul>
-
             <button class="navbar__hamburguer-menu" onclick="exibirDropdown()">
-                <i class="fa-solid fa-bars hamburg uer-menu"></i>
+                <i class="fa-solid fa-bars hamburguer-menu"></i>
             </button>
+
+            <div class="navbar__dropdown" id="navbar__dropdown">
+                <div class="navbar__dropdown-links">
+                    <a href="index.html" class="navbar__link">Início</a>
+                    <a href="imc.html" class="navbar__link">Calculadora de IMC</a>
+                    <a href="peso-ideal.html" class="navbar__link">Calculadora de Peso Ideal</a>
+                </div>
+
+                <div class="navbar__dropdown-others">
+                    <p class="navbar__soon-title">Em breve:</p>
+                    <div class="navbar__soon-container">
+                        <p class="navbar__soon-item">• Taxa Metabólica Basal</p>
+                        <p class="navbar__soon-item">• Calculadora de Hidratação</p>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 

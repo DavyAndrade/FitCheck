@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitCheck | Calculadora de IMC</title>
+    <title>FitCheck | Home</title>
     <link rel="icon" type="image/x-icon" href="./public/FitCheck-logo.svg">
     <link rel="stylesheet" href="./src/css/base/reset.css">
     <link rel="stylesheet" href="./src/css/components/navbar.css">
@@ -16,16 +16,34 @@
 <body>
     <header class="header">
         <nav class="navbar" id="navbar__mobile">
-            <a href="index.html" class="navbar-logo">
+            <a href="index.html" class="navbar__logo">
                 <i class="fa-solid fa-heart-pulse"></i> FitCheck
             </a>
 
-            <i class="fa-solid fa-bars" tabindex="0"></i>
+            <button class="navbar__hamburguer-menu" onclick="exibirDropdown()">
+                <i class="fa-solid fa-bars hamburguer-menu"></i>
+            </button>
+
+            <div class="navbar__dropdown" id="navbar__dropdown">
+                <div class="navbar__dropdown-links">
+                    <a href="index.html" class="navbar__link">Início</a>
+                    <a href="imc.html" class="navbar__link">Calculadora de IMC</a>
+                    <a href="peso-ideal.html" class="navbar__link">Calculadora de Peso Ideal</a>
+                </div>
+
+                <div class="navbar__dropdown-others">
+                    <p class="navbar__soon-title">Em breve:</p>
+                    <div class="navbar__soon-container">
+                        <p class="navbar__soon-item">• Taxa Metabólica Basal</p>
+                        <p class="navbar__soon-item">• Calculadora de Hidratação</p>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h1>Hello, world!</h1>
+    <main class="main">
+        <h1>Content here!</h1>
     </main>
 
     <footer class="footer">
@@ -47,8 +65,8 @@
             <h4>Links Úteis</h4>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="#">Calculadora IMC</a></li>
-                <li><a href="#">Peso Ideal</a></li>
+                <li><a href="imc.html">Calculadora IMC</a></li>
+                <li><a href="pesoIdeal.html">Peso Ideal</a></li>
             </ul>
         </section>
 

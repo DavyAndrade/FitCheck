@@ -13,7 +13,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    min-height: calc(100vh/1.5);
+    min-height: calc(100vh/1.75);
     flex-flow: column wrap;
     gap: 1rem;
 }
@@ -23,7 +23,6 @@
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     color: #fff;
     padding: 4rem 1rem;
-    width: 100%;
     margin-top: 64px;
 }
 
@@ -58,6 +57,7 @@
     border-radius: 10px;
     font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .hero__buttons .hero__button--primary {
@@ -70,7 +70,7 @@
     color: #fff;
 }
 
-.hero__button--secondary:hover {
+.hero__button--secondary:hover, .hero__button--secondary:focus {
     background-color: #fff;
     color: var(--primary-color);
 }
