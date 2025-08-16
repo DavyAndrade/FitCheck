@@ -15,110 +15,101 @@
 
 <body>
     <header class="header">
-        <nav class="navbar" id="navbar__desktop">
-            <a href="index.html" class="navbar-logo">
-                <i class="fa-solid fa-heart-pulse"></i> FitCheck
-            </a>
-            <ul class="navbar-list">
-                <li class="navbar-item"><a href="index.html">Início</a></li>
-                <li class="navbar-item"><a href="imc.html">Calculadora IMC</a></li>
-                <li class="navbar-item"><a href="pesoIdeal.html">Peso Ideal</a></li>
-                <li class="navbar-item dropdown" tabindex="0">
-                    <span>Mais Cálculos <i class="fa-solid fa-chevron-down fa-2xs"></i></span>
-
-                    <div class="dropdown-content">
-                        <p class="dropdown-soon">Em breve:</p>
-                        <p class="dropdown-item">• Taxa Metabólica Basal</p>
-                        <p class="dropdown-item">• Calculadora de Hidratação</p>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
         <nav class="navbar" id="navbar__mobile">
-            <a href="index.html" class="navbar-logo">
+            <a href="index.html" class="navbar__logo">
                 <i class="fa-solid fa-heart-pulse"></i> FitCheck
             </a>
 
-            <i class="fa-solid fa-bars" tabindex="0"></i>
+            <ul id="links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="imc.html">Calculadora de IMC</a></li>
+                <li><a href="peso-ideal.html">Calculadora de Peso Ideal</a></li>
+            </ul>
+
+            <button class="navbar__hamburguer-menu" onclick="exibirDropdown()">
+                <i class="fa-solid fa-bars hamburg uer-menu"></i>
+            </button>
         </nav>
     </header>
 
     <main class="main">
-        <section class="hero-section">
-            <h1 class="title">Cuide da sua <span>saúde</span> com o FitCheck</h1>
-            <p class="subtitle">Ferramentas simples e eficazes para monitorar seu bem-estar. Calcule seu IMC e descubra
+        <section class="section hero__container">
+            <h1 class="hero__title">Cuide da sua <span class="hero__title--emphasis">saúde</span> com o FitCheck</h1>
+            <p class="hero__subtitle">Ferramentas simples e eficazes para monitorar seu bem-estar. Calcule seu IMC e
+                descubra
                 seu peso ideal de
                 forma rápida e
                 precisa.</p>
             <div>
 
             </div>
-            <div class="hero-buttons">
-                <button class="primary-btn" onclick="window.location.href='imc.html'">Calcular IMC</button>
-                <button class="secondary-btn" onclick="window.location.href='pesoIdeal.html'">Peso Ideal</button>
+            <div class="hero__buttons">
+                <button class="hero__button--primary" onclick="window.location.href='imc.html'">Calcular IMC</button>
+                <button class="hero__button--secondary" onclick="window.location.href='peso-ideal.html'">Peso
+                    Ideal</button>
             </div>
         </section>
 
-        <section class="features-section">
-            <h2 class="title">Por que escolher o FitCheck?</h2>
-            <p>Ferramentas confiáveis baseadas em padrões médicos internacionais</p>
+        <section class="section features">
+            <h2 class="features__title">Por que escolher o FitCheck?</h2>
+            <p class="features__description">Ferramentas confiáveis baseadas em padrões médicos internacionais</p>
 
-            <div class="features-container">
-                <article class="feature-card">
+            <div class="features__container">
+                <article class="feature__card">
                     <i class="fa-solid fa-calculator"></i>
-                    <h3 class="feature-title">Cálculo Preciso</h3>
-                    <p>Algoritmos baseados em padrões da OMS para resultados confiáveis e
+                    <h3 class="card__title">Cálculo Preciso</h3>
+                    <p class="card_description">Algoritmos baseados em padrões da OMS para resultados confiáveis e
                         precisos.</p>
                 </article>
-                <article class="feature-card">
+                <article class="feature__card">
                     <i class="fa-solid fa-bolt"></i>
-                    <h3 class="feature-title">Rápido e Fácil</h3>
-                    <p>Interface intuitiva que permite cálculos instantâneos com apenas
+                    <h3 class="card__title">Rápido e Fácil</h3>
+                    <p class="card__description">Interface intuitiva que permite cálculos instantâneos com apenas
                         alguns cliques.</p>
                 </article>
-                <article class="feature-card">
+                <article class="feature__card">
                     <i class="fa-solid fa-shield"></i>
-                    <h3 class="feature-title">100% Seguro</h3>
-                    <p>Seus dados não são armazenados. Todos os cálculos são feitos
+                    <h3 class="card__title">100% Seguro</h3>
+                    <p class="card__description">Seus dados não são armazenados. Todos os cálculos são feitos
                         localmente no seu dispositivo.</p>
                 </article>
             </div>
         </section>
 
-        <section class="about-section">
-            <h2 class="about-title">Sobre o FitCheck</h2>
-            <p class="about-description">Sua ferramenta confiável para monitoramento de saúde</p>
+        <section class="section about">
+            <h2 class="about__title">Sobre o FitCheck</h2>
+            <p class="about__description">Sua ferramenta confiável para monitoramento de saúde</p>
 
-            <div class="card-container">
-                <article class="about-card">
-                    <h3 class="card-title">Nossa Missão</h3>
-                    <p class="card-description">O FitCheck foi desenvolvido para tornar o monitoramento da saúde mais
+            <div class="about__container">
+                <article class="about__card">
+                    <h3 class="card__title">Nossa Missão</h3>
+                    <p class="card__description">O FitCheck foi desenvolvido para tornar o monitoramento da saúde mais
                         acessível e simples.
                         Acreditamos
                         que todos devem
                         ter acesso a ferramentas confiáveis para cuidar do próprio bem-estar.</p>
                 </article>
 
-                <article class="about-card">
-                    <h3 class="card-title">Tecnologia Confiável</h3>
-                    <p class="card-description">Nossos cálculos são baseados em fórmulas médicas reconhecidas
+                <article class="about__card">
+                    <h3 class="card__title">Tecnologia Confiável</h3>
+                    <p class="card__description">Nossos cálculos são baseados em fórmulas médicas reconhecidas
                         internacionalmente, garantindo
                         resultados
                         precisos e
                         confiáveis para orientar suas decisões de saúde.</p>
                 </article>
 
-                <article class="about-card">
-                    <h3 class="card-title">Expansão Futura</h3>
-                    <p class="card-description">Estamos constantemente trabalhando para adicionar novas funcionalidades,
+                <article class="about__card">
+                    <h3 class="card__title">Expansão Futura</h3>
+                    <p class="card__description">Estamos constantemente trabalhando para adicionar novas
+                        funcionalidades,
                         como calculadoras de taxa
                         metabólica basal e
                         hidratação, para oferecer uma experiência ainda mais completa.</p>
                 </article>
 
-                <article class="about-card tools">
-                    <h3 class="card-title">Ferramentas Disponíveis</h3>
+                <article class="about__card tools">
+                    <h3 class="card__title">Ferramentas Disponíveis</h3>
                     <ul>
                         <li><i class="fa-solid fa-check"></i>Calculadora de IMC</li>
                         <li><i class="fa-solid fa-check"></i>Calculadora de Peso Ideal</li>

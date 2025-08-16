@@ -1,136 +1,36 @@
-/* ===== RESET GLOBAL ===== */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    /* Modelo de caixa intuitivo */
+/* ===== Reset e Variáveis Globais */
+
+:root {
+    /* Color Variables */
+    --primary-color: #10b981;
+    --secondary-color: #059669;
+    --accent-color: #34D399;
+    --neutral-color: ##F3F4F6;
+    --dark-color: #1F2937;
+}
+
+* {
     margin: 0;
     padding: 0;
-}
-
-/* Remover estilos padrão de lista */
-ul[role="list"],
-ol[role="list"],
-li {
-    list-style: none;
-}
-
-/* Elementos de bloco naturais */
-html,
-body,
-div,
-span,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-em,
-img,
-strong,
-sub,
-sup,
-b,
-u,
-i,
-dl,
-dt,
-dd,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-    border: 0;
-    vertical-align: baseline;
-}
-
-/* Tipografia responsiva e suavização de fontes */
-html {
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-/* Herança de fontes para elementos de formulário */
-button,
-input,
-select,
-textarea {
-    font: inherit;
-    color: inherit;
-}
-
-/* Reset de elementos interativos */
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Imagens responsivas e tratamento de overflow */
-img,
-picture,
-svg,
-video {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Evitar overflow horizontal */
-html,
-body {
-    overflow-x: hidden;
-    max-width: 100vw;
-}
-
-/* Reset de tabelas */
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* Elementos escondidos visualmente mas acessíveis */
-.visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-family: ui-sans-serif,
+        system-ui,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+    ;
+    font-size: 16px;
     min-height: 100vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 64px;
-    line-height: 1.5;
+    line-height: 1.2;
     width: 100%;
 }
