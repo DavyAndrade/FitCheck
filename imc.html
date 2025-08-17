@@ -15,25 +15,27 @@
 
 <body>
     <header>
+    
+        <!-- Navbar Mobile -->
         <nav class="navbar" id="navbar-mobile">
             <a href="index.html" class="navbar__logo">
                 <i class="fa-solid fa-heart-pulse"></i> FitCheck
             </a>
-
-            <button class="navbar__hamburguer-menu" onclick="showDropdown()" aria-expanded="false"
-                aria-controls="navbar-dropdown">
+    
+            <button class="navbar__toggle" onclick="toggleDropdown()" aria-expanded="false" aria-controls="navbar-dropdown">
                 <span class="sr-only">Abrir menu</span>
                 <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
-
+    
+            <!-- Dropdown -->
             <div class="navbar__dropdown" id="navbar-dropdown">
-                <div class="navbar__dropdown-links">
+                <div class="navbar__links">
                     <a href="index.html" class="navbar__link">Início</a>
                     <a href="imc.html" class="navbar__link">Calculadora de IMC</a>
                     <a href="peso-ideal.html" class="navbar__link">Calculadora de Peso Ideal</a>
                 </div>
-
-                <div class="navbar__dropdown-others">
+    
+                <div class="navbar__soon">
                     <p class="navbar__soon-title">Em breve:</p>
                     <ul class="navbar__soon-container">
                         <li class="navbar__soon-item">Taxa Metabólica Basal</li>
@@ -45,42 +47,49 @@
     </header>
 
     <main>
-        <section class="calc">
-            <h1 class="calc-title">
+
+        <!-- IMC Calculator Section -->
+        <section class="calculator">
+            <h1 class="calculator__title">
                 Calculadora de IMC
             </h1>
-            <p class="calc-desc">Descubra se seu peso está dentro da faixa ideal para sua altura</p>
+            <p class="calculator__description">Descubra se seu peso está dentro da faixa ideal para sua altura</p>
 
-            <div class="calc__card">
-                <article class="calc__form">
-                    <h2 class="calc__form-title">Insira seus dados</h2>
+            <!-- IMC Calculator Card -->
+            <div class="calculator__card">
+                <article class="calculator__form">
+                    <h2 class="form__title">Insira seus dados</h2>
 
-                    <form id="form-imc" class="calc__form-container">
-                        <div class="calc__form-group">
-                            <label for="peso" class="calc__form-label">Peso (kg)</label>
-                            <input type="number" id="peso" placeholder="Ex: 70" class="calc__form-input" required>
+                    <form id="form-imc" class="form__container">
+                        <div class="form__group">
+                            <label for="peso" class="form__label">Peso (kg)</label>
+                            <input type="number" id="peso" placeholder="Ex: 70" class="form__input" required>
                         </div>
 
-                        <div class="calc__form-group">
-                            <label for="altura" class="calc__form-label">Altura (cm)</label>
-                            <input type="number" id="altura" placeholder="Ex: 175" class="calc__form-input" required>
+                        <div class="form__group">
+                            <label for="altura" class="form__label">Altura (cm)</label>
+                            <input type="number" id="altura" placeholder="Ex: 175" class="form__input" required>
                         </div>
 
-                        <div class="calc__form-buttons">
-                            <button type="submit" class="calc__form-button" aria-describedby="resultado">Calcular IMC</button>
-                            <button type="button" class="calc__form-button--secondary"
+                        <div class="form__buttons">
+                            <button type="submit" class="form__button">Calcular
+                                IMC</button>
+                            <button type="button" class="form__button--secondary"
                                 onclick="window.location.href='index.html'">Voltar ao Início</button>
                         </div>
                     </form>
                 </article>
 
-                <article class="calc__result" id="resultado">
-                    <h2 class="calc__result-title">Resultado</h2>
-                    <div class="calc__result-box" aria-live="polite">
+                <!-- IMC Calculator Result -->
+                <article class="calculator__result" id="resultado">
+                    <h2 class="result__title">Resultado</h2>
+                    <div class="result__box" aria-live="polite">
                         <p>Preencha os campos para ver seu IMC</p>
                     </div>
-                    <section class="calc__result-info">
-                        <h3>Classificação de IMC</h3>
+
+                    <!-- IMC Classification -->
+                    <section class="result__info">
+                        <h3 class="">Classificação de IMC</h3>
                         <div>
                             <p>Abaixo do Peso:</p>
                             <p>Menor que 18,5</p>
@@ -102,36 +111,44 @@
             </div>
         </section>
 
-        <section>
-            <h2>O que é o IMC?</h2>
+        <!-- IMC About Section -->
+        <section class="about">
+            <h2 class="about__title">O que é o IMC?</h2>
 
-            <article>
-                <h3>Definição</h3>
-                <p>O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no
-                    peso ideal. É
-                    calculado dividindo o peso (em kg) pela altura (em metros) ao quadrado.</p>
-            </article>
+            <!-- IMC About Container -->
+            <div class="about__container">
+                <article class="about__content">
+                    <h3 class="content__title">Definição</h3>
+                    <p class="content__description">O Índice de Massa Corporal (IMC) é uma medida internacional usada
+                        para calcular se uma pessoa está no
+                        peso ideal. É
+                        calculado dividindo o peso (em kg) pela altura (em metros) ao quadrado.</p>
+                </article>
 
-            <article>
-                <h3>Importância</h3>
-                <p>O IMC é uma ferramenta útil para identificar possíveis problemas de peso que podem levar a problemas
-                    de saúde. No
-                    entanto, não distingue entre massa muscular e gordura corporal.</p>
-            </article>
+                <article class="about__content">
+                    <h3 class="content__title">Importância</h3>
+                    <p class="content__description">O IMC é uma ferramenta útil para identificar possíveis problemas de peso que podem levar a
+                        problemas
+                        de saúde. No
+                        entanto, não distingue entre massa muscular e gordura corporal.</p>
+                </article>
 
-            <article>
-                <h3>Limitações</h3>
-                <p>O IMC não considera a composição corporal, idade, sexo, etnia e massa muscular. Atletas podem ter IMC
-                    alto devido à
-                    massa muscular, não à gordura.</p>
-            </article>
+                <article class="about__content">
+                    <h3 class="content__title">Limitações</h3>
+                    <p class="content__description">O IMC não considera a composição corporal, idade, sexo, etnia e massa muscular. Atletas podem ter
+                        IMC
+                        alto devido à
+                        massa muscular, não à gordura.</p>
+                </article>
 
-            <article>
-                <h3>Recomendação</h3>
-                <p>Use o IMC como uma referência inicial. Para uma avaliação completa da sua saúde, consulte sempre um
-                    profissional de
-                    saúde qualificado.</p>
-            </article>
+                <article class="about__content">
+                    <h3 class="content__title">Recomendação</h3>
+                    <p class="content__description">Use o IMC como uma referência inicial. Para uma avaliação completa da sua saúde, consulte sempre
+                        um
+                        profissional de
+                        saúde qualificado.</p>
+                </article>
+            </div>
         </section>
     </main>
 

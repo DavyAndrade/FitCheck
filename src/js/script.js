@@ -1,6 +1,6 @@
 console.log("Script loaded successfully!");
 
-function showDropdown() {
+function toggleDropdown() {
   const dropdownMenu = document.getElementById("navbar-dropdown");
   if (dropdownMenu.style.display === "flex") {
     dropdownMenu.style.display = "none";

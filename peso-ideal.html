@@ -15,25 +15,27 @@
 
 <body>
     <header>
+    
+        <!-- Navbar Mobile -->
         <nav class="navbar" id="navbar-mobile">
             <a href="index.html" class="navbar__logo">
                 <i class="fa-solid fa-heart-pulse"></i> FitCheck
             </a>
     
-            <button class="navbar__toggle" onclick="toggleDropdown()" aria-expanded="false"
-                aria-controls="navbar-dropdown">
+            <button class="navbar__toggle" onclick="toggleDropdown()" aria-expanded="false" aria-controls="navbar-dropdown">
                 <span class="sr-only">Abrir menu</span>
                 <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
     
+            <!-- Dropdown -->
             <div class="navbar__dropdown" id="navbar-dropdown">
-                <div class="navbar__dropdown-links">
+                <div class="navbar__links">
                     <a href="index.html" class="navbar__link">Início</a>
                     <a href="imc.html" class="navbar__link">Calculadora de IMC</a>
                     <a href="peso-ideal.html" class="navbar__link">Calculadora de Peso Ideal</a>
                 </div>
     
-                <div class="navbar__dropdown-others">
+                <div class="navbar__soon">
                     <p class="navbar__soon-title">Em breve:</p>
                     <ul class="navbar__soon-container">
                         <li class="navbar__soon-item">Taxa Metabólica Basal</li>

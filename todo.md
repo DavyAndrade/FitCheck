@@ -18,3 +18,4 @@
     - Tablets (>=768px)
     - Desktops (>=1024px)
     - Large Desktop (>=1440px)
+- Ajustar o BEM já aplicado.

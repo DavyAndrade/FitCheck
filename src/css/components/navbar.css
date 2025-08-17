@@ -31,13 +31,13 @@ header {
     transition: ease 250ms;
 }
 
-.navbar__hamburguer-menu {
+.navbar__toggle {
     background-color: transparent;
     font-size: 1.10rem;
 }
 
-.navbar__hamburguer-menu:hover,
-.navbar__hamburguer-menu:focus {
+.navbar__toggle:hover,
+.navbar__toggle:focus {
     color: var(--primary-color);
     transition: ease 250ms;
 }
@@ -68,7 +68,7 @@ header {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.navbar__dropdown-links {
+.navbar__links {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
@@ -85,7 +85,7 @@ header {
     transition: ease 250ms;
 }
 
-.navbar__dropdown-others {
+.navbar__soon-content {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
