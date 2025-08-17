@@ -7,7 +7,7 @@
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem;
     gap: 2rem;
     background-color: var(--dark-color);
     color: #fff;
@@ -36,7 +36,7 @@
 }
 
 .footer__info-link {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #d1d5db;
 }
 
@@ -94,7 +94,8 @@
     color: #d1d5db;
 }
 
-.footer__support-link:hover, .footer__support-link:focus {
+.footer__support-link:hover,
+.footer__support-link:focus {
     color: var(--primary-color);
     transition: ease 250ms;
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitCheck | Home</title>
+    <title>FitCheck - Peso Ideal</title>
     <link rel="icon" type="image/x-icon" href="./public/FitCheck-logo.svg">
     <link rel="stylesheet" href="./src/css/base/reset.css">
     <link rel="stylesheet" href="./src/css/components/navbar.css">
@@ -14,35 +14,37 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar" id="navbar__mobile">
+    <header>
+        <nav class="navbar" id="navbar-mobile">
             <a href="index.html" class="navbar__logo">
                 <i class="fa-solid fa-heart-pulse"></i> FitCheck
             </a>
-
-            <button class="navbar__hamburguer-menu" onclick="exibirDropdown()">
-                <i class="fa-solid fa-bars hamburguer-menu"></i>
+    
+            <button class="navbar__toggle" onclick="toggleDropdown()" aria-expanded="false"
+                aria-controls="navbar-dropdown">
+                <span class="sr-only">Abrir menu</span>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
-
-            <div class="navbar__dropdown" id="navbar__dropdown">
+    
+            <div class="navbar__dropdown" id="navbar-dropdown">
                 <div class="navbar__dropdown-links">
                     <a href="index.html" class="navbar__link">Início</a>
                     <a href="imc.html" class="navbar__link">Calculadora de IMC</a>
                     <a href="peso-ideal.html" class="navbar__link">Calculadora de Peso Ideal</a>
                 </div>
-
+    
                 <div class="navbar__dropdown-others">
                     <p class="navbar__soon-title">Em breve:</p>
-                    <div class="navbar__soon-container">
-                        <p class="navbar__soon-item">• Taxa Metabólica Basal</p>
-                        <p class="navbar__soon-item">• Calculadora de Hidratação</p>
-                    </div>
+                    <ul class="navbar__soon-container">
+                        <li class="navbar__soon-item">Taxa Metabólica Basal</li>
+                        <li class="navbar__soon-item">Calculadora de Hidratação</li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="main">
+    <main>
         <h1>Content here</h1>
     </main>
 
@@ -55,10 +57,14 @@
                 saúde.
             </p>
             <div class="footer__info-links">
-                <a href="#" class="footer__info-link"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="footer__info-link"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="footer__info-link"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" class="footer__info-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="footer__info-link" aria-label="Facebook do FitCheck"><i class="fa-brands fa-facebook"
+                        aria-hidden="true"></i></a>
+                <a href="#" class="footer__info-link" aria-label="Instagram do FitCheck"><i class="fa-brands fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="#" class="footer__info-link" aria-label="X/Twitter do FitCheck"><i class="fa-brands fa-x-twitter"
+                        aria-hidden="true"></i></a>
+                <a href="#" class="footer__info-link" aria-label="LinkedIn do FitCheck"><i class="fa-brands fa-linkedin"
+                        aria-hidden="true"></i></a>
             </div>
         </section>
     

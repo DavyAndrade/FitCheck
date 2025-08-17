@@ -1,4 +1,4 @@
-.header {
+header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 1.5rem;
+    padding-inline: 1.25rem;
     height: 100%;
     background-color: #fff;
     color: var(--dark-color);
@@ -33,7 +33,7 @@
 
 .navbar__hamburguer-menu {
     background-color: transparent;
-    font-size: 1rem;
+    font-size: 1.10rem;
 }
 
 .navbar__hamburguer-menu:hover,
@@ -42,8 +42,16 @@
     transition: ease 250ms;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 /* Navbar Dropdown */
-#navbar__dropdown {
+#navbar-dropdown {
     display: none;
 }
 
@@ -88,12 +96,18 @@
 }
 
 .navbar__soon-container {
+    list-style-type: disc;
     display: flex;
     flex-direction: column;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
+    color: #6b7280;
 }
 
 .navbar__soon-item {
-    font-size: 1rem;
-    font-weight: lighter;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.navbar__soon-item::marker {
+    font-size: smaller;
 }
