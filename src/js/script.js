@@ -3,23 +3,23 @@ console.log("Script loaded successfully!");
 
 // Carregando Componentes
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("navbar").innerHTML = loadNavbar();
-  document.getElementById("footer").innerHTML = loadFooter();
+    document.getElementById("navbar").innerHTML = loadNavbar();
+    document.getElementById("footer").innerHTML = loadFooter();
 });
 
 // Navbar Dropdown
 function toggleDropdown() {
-  const dropdownMenu = document.getElementById("navbar-dropdown");
-  if (dropdownMenu.style.display === "flex") {
-    dropdownMenu.style.display = "none";
-  } else {
-    dropdownMenu.style.display = "flex";
-  }
+    const dropdownMenu = document.getElementById("navbar-dropdown");
+    if (dropdownMenu.style.display === "flex") {
+        dropdownMenu.style.display = "none";
+    } else {
+        dropdownMenu.style.display = "flex";
+    }
 }
 
 // Navbar Component
 function loadNavbar() {
-  return `
+    return `
   <nav class="navbar" id="navbar-mobile">
             <a href="index.html" class="navbar__logo">
                 <i class="fa-solid fa-heart-pulse"></i> FitCheck
@@ -53,7 +53,7 @@ function loadNavbar() {
 
 // Footer Component
 function loadFooter() {
-  return `
+    return `
         <!-- Info Section -->
         <section class="footer__info">
             <h3 class="footer__info-title">FitCheck</h3>

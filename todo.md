@@ -1,6 +1,7 @@
 # Navbar
 - Responsibilidade (Tablet, Desktop, Large Desktops)
 - Consertar Hamburguer Menu
+- Ajustar o posicionamento com o novo reset
 
 # Home
 - Hero Section (Tablet, Desktop, Large Desktop)
@@ -10,6 +11,15 @@
 # Footer
 - Responsibilidade (Tablet, Desktop, Large Desktop)
 - Realizar a limpeza de CSS com estilizações semelhantes (?)
+- Ajustar o posicionamento com o novo reset
+
+# IMC
+- Ajustar a Estilização da Página
+- Funcionalidade de Cálculo
+
+# Peso Ideal
+- Construção do Corpo do Conteúdo
+- Estilização
 
 # Geral
 - Implementar nomenclatura BEM no CSS para melhor leitura/documentação.
