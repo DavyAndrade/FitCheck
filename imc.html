@@ -2,14 +2,14 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitCheck - Calcule seu IMC</title>
-    <link rel="icon" type="image/x-icon" href="./public/FitCheck-logo.svg">
-    <link rel="stylesheet" href="./src/css/base/reset.css">
-    <link rel="stylesheet" href="./src/css/components/navbar.css">
-    <link rel="stylesheet" href="./src/css/components/footer.css">
-    <link rel="stylesheet" href="./src/css/pages/imc.css">
+    <link rel="icon" type="image/x-icon" href="./public/FitCheck-logo.svg" />
+    <link rel="stylesheet" href="./src/css/base/reset.css" />
+    <link rel="stylesheet" href="./src/css/components/navbar.css" />
+    <link rel="stylesheet" href="./src/css/components/footer.css" />
+    <link rel="stylesheet" href="./src/css/pages/imc.css" />
     <script src="https://kit.fontawesome.com/bd8d2ac3c9.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,13 +17,12 @@
     <header id="navbar"></header>
 
     <main>
-
         <!-- IMC Calculator Section -->
         <section class="calculator">
-            <h1 class="calculator__title">
-                Calculadora de IMC
-            </h1>
-            <p class="calculator__description">Descubra se seu peso está dentro da faixa ideal para sua altura</p>
+            <h1 class="calculator__title">Calculadora de IMC</h1>
+            <p class="calculator__description">
+                Descubra se seu peso está dentro da faixa ideal para sua altura
+            </p>
 
             <!-- IMC Calculator Card -->
             <div class="calculator__card">
@@ -33,48 +32,55 @@
                     <form id="form-imc" class="form__container">
                         <div class="form__group">
                             <label for="peso" class="form__label">Peso (kg)</label>
-                            <input type="number" id="peso" placeholder="Ex: 70" class="form__input" required>
+                            <input type="number" id="peso" placeholder="Ex: 70" class="form__input" min="1" step="any"
+                                required />
                         </div>
 
                         <div class="form__group">
                             <label for="altura" class="form__label">Altura (cm)</label>
-                            <input type="number" id="altura" placeholder="Ex: 175" class="form__input" required>
+                            <input type="number" id="altura" placeholder="Ex: 175" class="form__input" min="1"
+                                required />
                         </div>
 
                         <div class="form__buttons">
-                            <button type="submit" class="form__button">Calcular
-                                IMC</button>
-                            <button type="button" class="form__button--secondary"
-                                onclick="window.location.href='index.html'">Voltar ao Início</button>
+                            <button type="submit" class="form__button">Calcular IMC</button>
+                            <button type="button" class="form__button form__button--secondary"
+                                onclick="window.location.href='index.html'">
+                                Voltar ao Início
+                            </button>
                         </div>
                     </form>
                 </article>
 
                 <!-- IMC Calculator Result -->
-                <article class="calculator__result" id="resultado">
+                <article class="calculator__result">
                     <h2 class="result__title">Resultado</h2>
-                    <div class="result__box" aria-live="polite">
+                    <div class="result__box" id="resultBox" aria-live="polite">
                         <p>Preencha os campos para ver seu IMC</p>
                     </div>
 
                     <!-- IMC Classification -->
                     <section class="result__info">
-                        <h3 class="">Classificação de IMC</h3>
-                        <div>
-                            <p>Abaixo do Peso:</p>
-                            <p>Menor que 18,5</p>
-                        </div>
-                        <div>
-                            <p>Peso Normal:</p>
-                            <p>18,5 - 24,9</p>
-                        </div>
-                        <div>
-                            <p>Sobrepeso:</p>
-                            <p>25,0 - 29,9</p>
-                        </div>
-                        <div>
-                            <p>Obesidade: </p>
-                            <p>30,0 ou mais</p>
+                        <h3 class="info__title">Classificação do IMC</h3>
+                        <div class="info__container">
+                            <div class="info__content">
+                                <p class="info__text">Abaixo do Peso:</p>
+                                <p class="info__text info__text--bold">Abaixo de 18,5</p>
+                            </div>
+                            <div class="info__content">
+                                <p class="info__text">Peso Normal:</p>
+                                <p class="info__text info__text--bold info__text--green">
+                                    18,5 - 24,9
+                                </p>
+                            </div>
+                            <div class="info__content">
+                                <p class="info__text">Sobrepeso:</p>
+                                <p class="info__text info__text--bold">25,0 - 29,9</p>
+                            </div>
+                            <div class="info__content">
+                                <p class="info__text">Obesidade:</p>
+                                <p class="info__text info__text--bold">30,0 ou mais</p>
+                            </div>
                         </div>
                     </section>
                 </article>
@@ -89,37 +95,38 @@
             <div class="about__container">
                 <article class="about__content">
                     <h3 class="content__title">Definição</h3>
-                    <p class="content__description">O Índice de Massa Corporal (IMC) é uma medida internacional usada
-                        para calcular se uma pessoa está no
-                        peso ideal. É
-                        calculado dividindo o peso (em kg) pela altura (em metros) ao quadrado.</p>
+                    <p class="content__description">
+                        O Índice de Massa Corporal (IMC) é uma medida internacional usada
+                        para calcular se uma pessoa está no peso ideal. É calculado
+                        dividindo o peso (em kg) pela altura (em metros) ao quadrado.
+                    </p>
                 </article>
 
                 <article class="about__content">
                     <h3 class="content__title">Importância</h3>
-                    <p class="content__description">O IMC é uma ferramenta útil para identificar possíveis problemas de
-                        peso que podem levar a
-                        problemas
-                        de saúde. No
-                        entanto, não distingue entre massa muscular e gordura corporal.</p>
+                    <p class="content__description">
+                        O IMC é uma ferramenta útil para identificar possíveis problemas
+                        de peso que podem levar a problemas de saúde. No entanto, não
+                        distingue entre massa muscular e gordura corporal.
+                    </p>
                 </article>
 
                 <article class="about__content">
                     <h3 class="content__title">Limitações</h3>
-                    <p class="content__description">O IMC não considera a composição corporal, idade, sexo, etnia e
-                        massa muscular. Atletas podem ter
-                        IMC
-                        alto devido à
-                        massa muscular, não à gordura.</p>
+                    <p class="content__description">
+                        O IMC não considera a composição corporal, idade, sexo, etnia e
+                        massa muscular. Atletas podem ter IMC alto devido à massa
+                        muscular, não à gordura.
+                    </p>
                 </article>
 
                 <article class="about__content">
                     <h3 class="content__title">Recomendação</h3>
-                    <p class="content__description">Use o IMC como uma referência inicial. Para uma avaliação completa
-                        da sua saúde, consulte sempre
-                        um
-                        profissional de
-                        saúde qualificado.</p>
+                    <p class="content__description">
+                        Use o IMC como uma referência inicial. Para uma avaliação completa
+                        da sua saúde, consulte sempre um profissional de saúde
+                        qualificado.
+                    </p>
                 </article>
             </div>
         </section>
