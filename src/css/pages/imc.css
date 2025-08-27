@@ -229,15 +229,16 @@ main {
 
 /* About Content */
 .about {
+  background-color: #fff;
+  box-shadow: 0px 0px 50px 1px rgba(0, 0, 127, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
-  border-radius: 0.75rem;
-  box-shadow: 0px 0px 50px 1px rgba(0, 0, 127, 0.1);
-  padding: var(--space-xl);
   gap: var(--space-lg);
+  padding: var(--space-xl);
+  border-radius: 0.75rem;
+  width: 100%;
 }
 
 .about__title {
