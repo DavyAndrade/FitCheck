@@ -20,7 +20,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="section hero">
+        <section class="hero">
             <h1 class="hero__title">Cuide da sua <span class="hero__title--emphasis">saúde</span> com o FitCheck</h1>
             <p class="hero__subtitle">Ferramentas simples e eficazes para monitorar seu bem-estar. Calcule seu IMC e
                 descubra
@@ -29,14 +29,13 @@
                 precisa.</p>
 
             <div class="hero__buttons">
-                <button class="hero__button--primary" onclick="window.location.href='imc.html'">Calcular IMC</button>
-                <button class="hero__button--secondary" onclick="window.location.href='peso-ideal.html'">Peso
-                    Ideal</button>
+                <button class="hero__button--primary" onclick="redirectIMC()">Calcular IMC</button>
+                <button class="hero__button--secondary" onclick="redirectPCI()">Calcular PCI</button>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section class="section features">
+        <section class="features">
             <h2 class="features__title">Por que escolher o FitCheck?</h2>
             <p class="features__description">Ferramentas confiáveis baseadas em padrões médicos internacionais</p>
 
@@ -65,7 +64,7 @@
         </section>
 
         <!-- About Section -->
-        <section class="section about">
+        <section class="about">
             <h2 class="about__title">Sobre o FitCheck</h2>
             <p class="about__description">Sua ferramenta confiável para monitoramento de saúde</p>
 
@@ -102,7 +101,7 @@
                     <h3 class="about__card-title">Ferramentas Disponíveis</h3>
                     <ul class="about__card-items">
                         <li class="about__card-item"><i class="fa-solid fa-check"></i>Calculadora de IMC</li>
-                        <li class="about__card-item"><i class="fa-solid fa-check"></i>Calculadora de Peso Ideal</li>
+                        <li class="about__card-item"><i class="fa-solid fa-check"></i>Calculadora de PCI</li>
                         <li class="about__card-item--soon"><i class="fa-solid fa-clock"></i>Taxa Metabólica Basal (em
                             breve)</li>
                         <li class="about__card-item--soon"><i class="fa-solid fa-clock"></i>Calculadora de Hidratação

@@ -1,0 +1,121 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: var(--space-4xl) var(--space-md);
+  gap: var(--space-xl);
+  width: 100%;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.calculator__title {
+  color: var(--dark-color);
+  font-size: var(--font-3xl);
+  margin-bottom: var(--space-md);
+}
+
+.calculator__description {
+  color: #4b5563;
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.calculator__container {
+  background-color: var(--neutral-color);
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: var(--space-xl);
+  border-radius: 12px;
+  gap: var(--space-xl);
+}
+
+.calculator__article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.calculator__subtitle {
+  font-size: var(--font-xl);
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+.calculator__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.form__label {
+    font-size: var(--font-sm);
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+.form__input {
+    padding: 0.75rem var(--space-md);
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    line-height: var(--line-normal);
+}
+
+.form__input:focus {
+  border: 1px solid var(--primary-color);
+  transition: ease 250ms;
+}
+
+.form__select {
+    padding: 0.75rem var(--space-md);
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    line-height: var(--line-normal);
+    font-size: var(--font-md);
+}
+
+.form__group--buttons {
+    gap: var(--space-md);
+}
+
+.form__button {
+  background-color: var(--primary-color);
+  padding: 0.75rem 0;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  line-height: var(--line-normal);
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: var(--secondary-color);
+  transition: ease 250ms;
+}
+
+.form__button--secondary {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.form__button--secondary:hover,
+.form__button--secondary:focus {
+  background-color: var(--primary-color);
+  color: #fff;
+}

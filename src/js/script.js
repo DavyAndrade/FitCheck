@@ -3,23 +3,23 @@ console.log("Script loaded successfully!");
 
 // Carregando Componentes
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("navbar").innerHTML = loadNavbar();
-    document.getElementById("footer").innerHTML = loadFooter();
+  document.getElementById("navbar").innerHTML = loadNavbar();
+  document.getElementById("footer").innerHTML = loadFooter();
 });
 
 // Navbar Dropdown
 function toggleDropdown() {
-    const dropdownMenu = document.getElementById("navbar-dropdown");
-    if (dropdownMenu.style.display === "flex") {
-        dropdownMenu.style.display = "none";
-    } else {
-        dropdownMenu.style.display = "flex";
-    }
+  const dropdownMenu = document.getElementById("navbar-dropdown");
+  if (dropdownMenu.style.display === "flex") {
+    dropdownMenu.style.display = "none";
+  } else {
+    dropdownMenu.style.display = "flex";
+  }
 }
 
 // Navbar Component
 function loadNavbar() {
-    return `
+  return `
   <nav class="navbar" id="navbar-mobile">
             <a href="index.html" class="navbar__logo">
                 <i class="fa-solid fa-heart-pulse"></i> FitCheck
@@ -35,8 +35,8 @@ function loadNavbar() {
             <div class="navbar__dropdown" id="navbar-dropdown">
                 <div class="navbar__links">
                     <a href="index.html" class="navbar__link">Início</a>
-                    <a href="imc.html" class="navbar__link">Calculadora de IMC</a>
-                    <a href="peso-ideal.html" class="navbar__link">Calculadora de Peso Ideal</a>
+                    <a href="imc.html" class="navbar__link">Calculadora IMC</a>
+                    <a href="pci.html" class="navbar__link">Calculadora PCI</a>
                 </div>
 
                 <div class="navbar__soon">
@@ -53,7 +53,7 @@ function loadNavbar() {
 
 // Footer Component
 function loadFooter() {
-    return `
+  return `
         <!-- Info Section -->
         <section class="footer__info">
             <h3 class="footer__info-title">FitCheck</h3>
@@ -79,8 +79,8 @@ function loadFooter() {
             <h4 class="footer__links-title">Links Úteis</h4>
             <div class="footer__links-items">
                 <a class="footer__links-link" href="index.html">Início</a>
-                <a class="footer__links-link" href="imc.html">Calculadora IMC</a>
-                <a class="footer__links-link" href="peso-ideal.html">Peso Ideal</a>
+                <a class="footer__links-link" href="imc.html">IMC</a>
+                <a class="footer__links-link" href="pci.html">PCI</a>
             </div>
         </section>
 
@@ -100,4 +100,16 @@ function loadFooter() {
                 educacionais.</p>
         </div>
   `;
+}
+
+function returnToHome() {
+  window.location.href = "../index.html";
+}
+
+function redirectPCI() {
+  window.location.href = "pci.html";
+}
+
+function redirectIMC() {
+  window.location.href = "imc.html";
 }

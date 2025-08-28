@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitCheck - Calcule seu PCI</title>
+    <link rel="icon" type="image/x-icon" href="./public/FitCheck-logo.svg" />
+    <link rel="stylesheet" href="./src/css/base/reset.css" />
+    <link rel="stylesheet" href="./src/css/components/navbar.css" />
+    <link rel="stylesheet" href="./src/css/components/footer.css" />
+    <link rel="stylesheet" href="./src/css/pages/pci.css" />
+    <script src="https://kit.fontawesome.com/bd8d2ac3c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="navbar"></header>
+
+    <main>
+        <section class="calculator">
+            <h1 class="calculator__title">Calculadora de Peso Corporal Ideal (PCI)</h1>
+            <p class="calculator__description">Calcule seu peso ideal baseado na altura, idade e sexo</p>
+
+            <div class="calculator__container">
+
+                <article class="calculator__article">
+                    <h2 class="calculator__subtitle">Insira seus dados</h2>
+
+                    <form class="calculator__form">
+                        <div class="form__group">
+                            <label for="altura" class="form__label">Altura (cm)</label>
+                            <input type="number" id="altura" placeholder="Ex: 175" min="1" class="form__input"
+                                required />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="sexo" class="form__label">Sexo</label>
+                            <select name="sexo" id="sexo" class="form__select">
+                                <option value="selecione">Selecione</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group form__group--buttons">
+                            <button type="submit" onclick="" class="form__button">Calcular PCI</button>
+                            <button type="button" onclick="returnToHome()" class="form__button form__button--secondary">
+                                Voltar ao Início
+                            </button>
+                        </div>
+                    </form>
+                </article>
+
+                <article>
+                    <h2>Resultado</h2>
+                    <div>
+                        <p>Preencha os campos para ver seu peso ideal</p>
+                    </div>
+
+                    <section>
+                        <h3>Sobre o cálculo</h3>
+                        <p>O Peso Corporal Ideal é calculado usando a fórmula de Devine, considerando apenas altura e
+                            sexo
+                            biológico. É uma
+                            referência médica amplamente utilizada.</p>
+                    </section>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Entenda o Peso Ideal</h2>
+
+            <article>
+                <h3>Fórmula de Devine</h3>
+                <p>Desenvolvida pelo Dr. Ben Devine em 1974, esta fórmula é amplamente utilizada na medicina para
+                    calcular dosagens de
+                    medicamentos e determinar o peso corporal ideal.</p>
+            </article>
+
+            <article>
+                <h3>Cálculo Simplificado</h3>
+                <ul>
+                    <li>Homens: 50kg + 2,3kg por polegada acima de 5 pés</li>
+                    <li>Mulheres: 45,5kg + 2,3kg por polegada acima de 5 pés</li>
+                    <li>Baseado apenas em altura e sexo</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Faixa Recomendável</h3>
+                <p>A faixa saudável é calculada como ±10% do PCI, considerando variações individuais de estrutura
+                    corporal e composição
+                    muscular.</p>
+            </article>
+
+            <article>
+                <h3>Uso Recomendado</h3>
+                <p>O PCI é uma referência inicial útil, mas fatores como massa muscular, densidade óssea e composição
+                    corporal individual
+                    devem ser considerados para uma avaliação completa.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer"></footer>
+
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/pci.js"></script>
+</body>
+
+</html>

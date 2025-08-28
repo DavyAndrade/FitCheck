@@ -1,5 +1,5 @@
 # FitCheck — Sua Ferramenta de Saúde 🏥
-O FitCheck é uma plataforma web desenvolvida para auxiliar usuários no monitoramento da saúde e bem-estar de forma prática e acessível. O site oferece ferramentas como calculadora de IMC e calculadora de peso ideal, baseadas em padrões médicos reconhecidos, proporcionando resultados confiáveis e instantâneos. O FitCheck prioriza a privacidade do usuário, realizando todos os cálculos localmente, sem armazenamento de dados pessoais.
+O FitCheck é uma plataforma web desenvolvida para auxiliar usuários no monitoramento da saúde e bem-estar de forma prática e acessível. O site oferece ferramentas como calculadora de IMC e calculadora de peso corporal ideal, baseadas em padrões médicos reconhecidos, proporcionando resultados confiáveis e instantâneos. O FitCheck prioriza a privacidade do usuário, realizando todos os cálculos localmente, sem armazenamento de dados pessoais.
 
 # Ferramentas Utilizadas 🖥️
 - HTML5 — Estruturação das páginas e conteúdo.
