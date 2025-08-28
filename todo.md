@@ -1,5 +1,5 @@
 # Navbar
-- Responsibilidade (Tablet, Desktop, Large Desktops)
+- Responsividade (Tablet, Desktop, Large Desktops)
 - Consertar Hamburguer Menu
 
 # Home
@@ -8,15 +8,15 @@
 - About Section (Tablet, Desktop, Large Desktop)
 
 # Footer
-- Responsibilidade (Tablet, Desktop, Large Desktop)
+- Responsividade (Tablet, Desktop, Large Desktop)
 - Realizar a limpeza de CSS com estilizações semelhantes (?)
 
 # IMC
-- Responsibilidade (Tablet, Desktop, Large Desktop)
+- Responsividade (Tablet, Desktop, Large Desktop)
 
 # Peso Ideal
-- Construção do Corpo do Conteúdo
-- Estilização
+- Finalizar a Estilização
+- Responsividade (Tablet, Desktop, Large Desktop)
 
 # Geral
 - Implementar nomenclatura BEM no CSS para melhor leitura/documentação.

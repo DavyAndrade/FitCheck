@@ -1,10 +1,8 @@
-// Verificando Script
-console.log("Script loaded successfully!");
-
-// Carregando Componentes
-document.addEventListener("DOMContentLoaded", () => {
+// Carregando Componentes e verificando script
+window.addEventListener("load", () => {
   document.getElementById("navbar").innerHTML = loadNavbar();
   document.getElementById("footer").innerHTML = loadFooter();
+  console.log("Script loaded successfully!");
 });
 
 // Navbar Dropdown

@@ -1,7 +1,8 @@
 const resultBox = document.getElementById("resultBox");
+const formIMC = document.getElementById("form-imc");
 
 // Teste de verificação
-document.getElementById("form-imc").addEventListener("submit", (e) => {
+formIMC.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let peso = document.getElementById("peso").value;
