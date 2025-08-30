@@ -77,8 +77,8 @@ function loadFooter() {
             <h4 class="footer__links-title">Links Úteis</h4>
             <div class="footer__links-items">
                 <a class="footer__links-link" href="index.html">Início</a>
-                <a class="footer__links-link" href="imc.html">IMC</a>
-                <a class="footer__links-link" href="pci.html">PCI</a>
+                <a class="footer__links-link" href="imc.html">Calculadora de IMC</a>
+                <a class="footer__links-link" href="pci.html">Calculadora de PCI</a>
             </div>
         </section>
 
