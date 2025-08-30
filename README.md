@@ -1,25 +1,27 @@
 
-# FitCheck — Documentação Oficial
 
-## Visão Geral
+# FitCheck — Documentação Oficial 🏥
+
+## Visão Geral 🩺
 O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, oferecendo ferramentas como calculadora de IMC e calculadora de Peso Corporal Ideal (PCI). O projeto prioriza privacidade, usabilidade e resultados baseados em padrões médicos reconhecidos.
 
 ---
 
-## Índice
-- [Visão Geral](#visão-geral)
-- [Funcionalidades](#funcionalidades)
-- [Instalação](#instalação)
-- [Como Usar](#como-usar)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Organização do Código](#organização-do-código)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+## Índice 📑
+- [Visão Geral 🩺](#visão-geral-)
+- [Funcionalidades ⚙️](#funcionalidades-)
+- [Instalação 💻](#instalação-)
+- [Como Usar 🧑‍💻](#como-usar-)
+- [Estrutura do Projeto 🗂️](#estrutura-do-projeto-)
+- [Tecnologias Utilizadas 🛠️](#tecnologias-utilizadas-)
+- [Organização do Código 🧩](#organização-do-código-)
+- [Contribuição 🤝](#contribuição-)
+- [Licença 📄](#licença-)
 
 ---
 
-## Funcionalidades
+
+## Funcionalidades ⚙️
 
 - **Calculadora de IMC:**
 	- Permite ao usuário calcular o Índice de Massa Corporal, exibindo classificação e dicas de saúde.
@@ -32,7 +34,8 @@ O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, of
 
 ---
 
-## Instalação
+
+## Instalação 💻
 
 1. Clone ou baixe este repositório:
 	 ```bash
@@ -46,7 +49,8 @@ O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, of
 
 ---
 
-## Como Usar
+
+## Como Usar 🧑‍💻
 
 1. Acesse a landing page principal (`index.html`).
 2. Navegue pelo menu para acessar as calculadoras de IMC e PCI.
@@ -54,7 +58,8 @@ O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, of
 
 ---
 
-## Estrutura do Projeto
+
+## Estrutura do Projeto 🗂️
 
 ```
 FitCheck/
@@ -84,7 +89,8 @@ FitCheck/
 
 ---
 
-## Tecnologias Utilizadas
+
+## Tecnologias Utilizadas 🛠️
 
 - **HTML5** — Estruturação das páginas.
 - **CSS3** — Estilização, responsividade e layout moderno.
@@ -93,7 +99,8 @@ FitCheck/
 
 ---
 
-## Organização do Código
+
+## Organização do Código 🧩
 
 - **Componentização:**
 	- Navbar e Footer são carregados dinamicamente via JavaScript para evitar repetição de código.
@@ -104,7 +111,8 @@ FitCheck/
 
 ---
 
-## Contribuição
+
+## Contribuição 🤝
 
 Contribuições são bem-vindas! Para contribuir:
 1. Faça um fork do projeto.
@@ -116,6 +124,7 @@ Contribuições são bem-vindas! Para contribuir:
 
 ---
 
-## Licença
+
+## Licença 📄
 
 Projeto desenvolvido para fins educacionais. Sinta-se livre para usar, modificar e compartilhar!
