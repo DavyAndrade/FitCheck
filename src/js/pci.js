@@ -9,35 +9,45 @@ formPCI.addEventListener("submit", (e) => {
 
   altura = parseFloat(altura) / 2.54;
 
+  if (sexo == "selecione") {
+    resultBox.innerHTML = `
+    <div>
+        <p class="calculator__result-text--error">Por favor, preencha todos os campos corretamente</p>
+    </div>
+  `;
+  }
+
   if (sexo == "masculino") {
-    let pci = (50 + 2.3 * (altura - 60)).toFixed(1);
-    let minKg = pci - (pci * 0.1).toFixed(0);
-    let maxKg = pci + (pci * 0.1).toFixed(0);
+    let pci = 50 + 2.3 * (altura - 60);
+    let minKg = pci - pci * 0.1;
+    let maxKg = pci + pci * 0.1;
 
     resultBox.innerHTML = `
     <div>
-        <p class="calculator__result-title">${pci} kg</p>
+        <p class="calculator__result-title">${pci.toFixed(1)} kg</p>
         <p class="calculator__result-subtitle">Peso Corporal Ideal</p>
     </div>
     <div class="calculator__result calculator__result--secondary">
         <strong class="calculator__result-text">Faixa Recomendável:</strong>
-        <p class="calculator__result-text">${minKg} kg - ${maxKg} kg</p>
+        <p class="calculator__result-text">${minKg.toFixed(1)} kg - ${maxKg.toFixed(1)} kg</p>
         <p class="calculator__result-text--info">(&#177;10% do PCI considerando variações individuais)</p>
     </div>
   `;
-  } else {
-    let pci = (45.5 + 2.3 * (altura - 60)).toFixed(1);
-    let minKg = pci - (pci * 0.1).toFixed(0);
-    let maxKg = pci + (pci * 0.1).toFixed(0);
+  }
+
+  if (sexo == "feminino") {
+    let pci = 45.5 + 2.3 * (altura - 60);
+    let minKg = pci - pci * 0.1;
+    let maxKg = pci + pci * 0.1;
 
     resultBox.innerHTML = `
     <div>
-        <p class="calculator__result-title">${pci} kg</p>
+        <p class="calculator__result-title">${pci.toFixed(1)} kg</p>
         <p class="calculator__result-subtitle">Peso Corporal Ideal</p>
     </div>
     <div class="calculator__result calculator__result--secondary">
         <strong class="calculator__result-text">Faixa Recomendável:</strong>
-        <p class="calculator__result-text">${minKg} kg - ${maxKg} kg</p>
+        <p class="calculator__result-text">${minKg.toFixed(1)} kg - ${maxKg.toFixed(1)} kg</p>
         <p class="calculator__result-text--info">(&#177;10% do PCI considerando variações individuais)</p>
     </div>
   `;

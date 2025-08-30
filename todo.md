@@ -11,11 +11,10 @@
 - Responsividade (Tablet, Desktop, Large Desktop)
 - Realizar a limpeza de CSS com estilizações semelhantes (?)
 
-# IMC
+# IMC Page
 - Responsividade (Tablet, Desktop, Large Desktop)
 
-# Peso Ideal
-- Finalizar a Estilização
+# PCI Page
 - Responsividade (Tablet, Desktop, Large Desktop)
 
 # Geral
