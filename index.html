@@ -2,63 +2,74 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitCheck - Saúde e Bem-estar</title>
-    <link rel="icon" type="image/x-icon" href="./public/FitCheck-logo.svg">
-    <link rel="stylesheet" href="./src/css/base/reset.css">
-    <link rel="stylesheet" href="./src/css/components/navbar.css">
-    <link rel="stylesheet" href="./src/css/components/footer.css">
-    <link rel="stylesheet" href="./src/css/pages/home.css">
+    <link rel="icon" type="image/x-icon" href="./public/FitCheck-logo.svg" />
+    <link rel="stylesheet" href="./src/css/base/reset.css" />
+    <link rel="stylesheet" href="./src/css/components/navbar.css" />
+    <link rel="stylesheet" href="./src/css/components/footer.css" />
+    <link rel="stylesheet" href="./src/css/pages/home.css" />
     <script src="https://kit.fontawesome.com/bd8d2ac3c9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <!-- Header -->
     <header id="navbar"></header>
 
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <h1 class="hero__title">Cuide da sua <span class="hero__title--emphasis">saúde</span> com o FitCheck</h1>
-            <p class="hero__subtitle">Ferramentas simples e eficazes para monitorar seu bem-estar. Calcule seu IMC e
-                descubra
-                seu peso ideal de
-                forma rápida e
-                precisa.</p>
+            <h1 class="hero__title">
+                Cuide da sua <span class="hero__title--emphasis">saúde</span> com o
+                FitCheck
+            </h1>
+            <p class="hero__subtitle">
+                Ferramentas simples e eficazes para monitorar seu bem-estar. Calcule
+                seu IMC e descubra seu peso ideal de forma rápida e precisa.
+            </p>
 
             <div class="hero__buttons">
-                <button class="hero__button--primary" onclick="redirectIMC()">Calcular IMC</button>
-                <button class="hero__button--secondary" onclick="redirectPCI()">Calcular PCI</button>
+                <button class="hero__button--primary" onclick="redirectIMC()">
+                    Calcular IMC
+                </button>
+                <button class="hero__button--secondary" onclick="redirectPCI()">
+                    Calcular PCI
+                </button>
             </div>
         </section>
 
         <!-- Features Section -->
         <section class="features">
             <h2 class="features__title">Por que escolher o FitCheck?</h2>
-            <p class="features__description">Ferramentas confiáveis baseadas em padrões médicos internacionais</p>
+            <p class="features__description">
+                Ferramentas confiáveis baseadas em padrões médicos internacionais
+            </p>
 
             <div class="features__card-container">
                 <article class="features__card">
                     <i class="fa-solid fa-calculator"></i>
                     <h3 class="features__card-title">Cálculo Preciso</h3>
-                    <p class="features__card-description">Algoritmos baseados em padrões da OMS para resultados
-                        confiáveis e
-                        precisos.</p>
+                    <p class="features__card-description">
+                        Algoritmos baseados em padrões da OMS para resultados confiáveis e
+                        precisos.
+                    </p>
                 </article>
                 <article class="features__card">
                     <i class="fa-solid fa-bolt"></i>
                     <h3 class="features__card-title">Rápido e Fácil</h3>
-                    <p class="features__card-description">Interface intuitiva que permite cálculos instantâneos com
-                        apenas
-                        alguns cliques.</p>
+                    <p class="features__card-description">
+                        Interface intuitiva que permite cálculos instantâneos com apenas
+                        alguns cliques.
+                    </p>
                 </article>
                 <article class="features__card">
                     <i class="fa-solid fa-shield"></i>
                     <h3 class="features__card-title">100% Seguro</h3>
-                    <p class="features__card-description">Seus dados não são armazenados. Todos os cálculos são feitos
-                        localmente no seu dispositivo.</p>
+                    <p class="features__card-description">
+                        Seus dados não são armazenados. Todos os cálculos são feitos
+                        localmente no seu dispositivo.
+                    </p>
                 </article>
             </div>
         </section>
@@ -66,46 +77,55 @@
         <!-- About Section -->
         <section class="about">
             <h2 class="about__title">Sobre o FitCheck</h2>
-            <p class="about__description">Sua ferramenta confiável para monitoramento de saúde</p>
+            <p class="about__description">
+                Sua ferramenta confiável para monitoramento de saúde
+            </p>
 
             <div class="about__card-container">
                 <article class="about__card">
                     <h3 class="about__card-title">Nossa Missão</h3>
-                    <p class="about__card-description">O FitCheck foi desenvolvido para tornar o monitoramento da saúde
-                        mais
-                        acessível e simples.
-                        Acreditamos
-                        que todos devem
-                        ter acesso a ferramentas confiáveis para cuidar do próprio bem-estar.</p>
+                    <p class="about__card-description">
+                        O FitCheck foi desenvolvido para tornar o monitoramento da saúde
+                        mais acessível e simples. Acreditamos que todos devem ter acesso a
+                        ferramentas confiáveis para cuidar do próprio bem-estar.
+                    </p>
                 </article>
 
                 <article class="about__card">
                     <h3 class="about__card-title">Tecnologia Confiável</h3>
-                    <p class="about__card-description">Nossos cálculos são baseados em fórmulas médicas reconhecidas
-                        internacionalmente, garantindo
-                        resultados
-                        precisos e
-                        confiáveis para orientar suas decisões de saúde.</p>
+                    <p class="about__card-description">
+                        Nossos cálculos são baseados em fórmulas médicas reconhecidas
+                        internacionalmente, garantindo resultados precisos e confiáveis
+                        para orientar suas decisões de saúde.
+                    </p>
                 </article>
 
                 <article class="about__card">
                     <h3 class="about__card-title">Expansão Futura</h3>
-                    <p class="about__card-description">Estamos constantemente trabalhando para adicionar novas
-                        funcionalidades,
-                        como calculadoras de taxa
-                        metabólica basal e
-                        hidratação, para oferecer uma experiência ainda mais completa.</p>
+                    <p class="about__card-description">
+                        Estamos constantemente trabalhando para adicionar novas
+                        funcionalidades, como calculadoras de taxa metabólica basal e
+                        hidratação, para oferecer uma experiência ainda mais completa.
+                    </p>
                 </article>
 
                 <article class="about__card tools">
                     <h3 class="about__card-title">Ferramentas Disponíveis</h3>
                     <ul class="about__card-items">
-                        <li class="about__card-item"><i class="fa-solid fa-check"></i>Calculadora de IMC</li>
-                        <li class="about__card-item"><i class="fa-solid fa-check"></i>Calculadora de PCI</li>
-                        <li class="about__card-item--soon"><i class="fa-solid fa-clock"></i>Taxa Metabólica Basal (em
-                            breve)</li>
-                        <li class="about__card-item--soon"><i class="fa-solid fa-clock"></i>Calculadora de Hidratação
-                            (em breve)</li>
+                        <li class="about__card-item">
+                            <i class="fa-solid fa-check"></i>Calculadora de IMC
+                        </li>
+                        <li class="about__card-item">
+                            <i class="fa-solid fa-check"></i>Calculadora de PCI
+                        </li>
+                        <li class="about__card-item--soon">
+                            <i class="fa-solid fa-clock"></i>Taxa Metabólica Basal (em
+                            breve)
+                        </li>
+                        <li class="about__card-item--soon">
+                            <i class="fa-solid fa-clock"></i>Calculadora de Hidratação (em
+                            breve)
+                        </li>
                     </ul>
                 </article>
             </div>
