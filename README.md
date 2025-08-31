@@ -52,7 +52,7 @@ O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, of
 
 ## Como Usar 🧑‍💻
 
-1. Acesse a landing page principal [neste link](https://davyandrade.github.io/FitCheck/).
+1. Acesse a landing page principal (`index.html`).
 2. Navegue pelo menu para acessar as calculadoras de IMC e PCI.
 3. Preencha os formulários com seus dados e visualize os resultados instantaneamente.
 
