@@ -223,7 +223,20 @@ header {
     justify-content: space-around;
   }
 
-  .navbar__link {
+  .navbar__links {
+    gap: var(--space-lg);
+  }
+
+  .navbar__link,
+  .navbar__item {
+    font-size: var(--font-md);
+  }
+
+  .navbar__dropdown-content {
+    left: -50%;
+  }
+
+  .navbar__dropdown-item {
     font-size: var(--font-md);
   }
 }
@@ -240,21 +253,20 @@ header {
   }
 
   .navbar__links {
-    gap: var(--space-lg);
+    gap: var(--space-xl);
   }
 
   .navbar__link,
   .navbar__item {
-    font-size: var(--font-lg);
+    font-size: var(--font-xl);
   }
 
   .navbar__dropdown-content {
-    left: -25%;
     min-width: 300px;
     padding: var(--space-md);
   }
 
   .navbar__dropdown-item {
-    font-size: var(--font-xl);
+    font-size: var(--font-lg);
   }
 }
