@@ -1,119 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Footer Container */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    padding: var(--space-2xl) var(--space-md);
-    gap: var(--space-xl);
-    background-color: var(--dark-color);
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--space-2xl) var(--space-md);
+  gap: var(--space-xl);
+  background-color: var(--dark-color);
+  color: #fff;
 }
 
 /* Footer Info */
 .footer__info {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
 }
 
 .footer__info-title {
-    font-size: var(--font-2xl);
-    color: var(--primary-color);
+  font-size: var(--font-2xl);
+  color: var(--primary-color);
 }
 
 .footer__info-description {
-    color: #d1d5db;
-    font-size: var(--font-md);
-    line-height: var(--line-normal);
+  color: #d1d5db;
+  font-size: var(--font-md);
+  line-height: var(--line-normal);
 }
 
 .footer__info-links {
-    display: flex;
-    gap: var(--space-sm);
+  display: flex;
+  gap: var(--space-sm);
 }
 
 .footer__info-link {
-    font-size: var(--font-2xl);
-    color: #d1d5db;
+  font-size: var(--font-2xl);
+  color: #d1d5db;
 }
 
 .footer__info-link:hover,
 .footer__info-link:focus {
-    color: var(--primary-color);
-    transition: ease 250ms;
+  color: var(--primary-color);
+  transition: ease 250ms;
 }
 
 /* Footer Links */
 .footer__links {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
 }
 
 .footer__links-title {
-    font-size: var(--font-lg);
-    font-weight: 500;
+  font-size: var(--font-lg);
+  font-weight: 500;
 }
 
 .footer__links-items {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .footer__links-link {
-    color: #d1d5db;
+  color: #d1d5db;
 }
 
 .footer__links-link:hover,
 .footer__links-link:focus {
-    color: var(--primary-color);
-    transition: ease 250ms;
+  color: var(--primary-color);
+  transition: ease 250ms;
 }
 
 /* Footer Support */
 .footer__support {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
 }
 
 .footer__support-title {
-    font-size: var(--font-lg);
-    font-weight: 500;
+  font-size: var(--font-lg);
+  font-weight: 500;
 }
 
 .footer__support-items {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .footer__support-link {
-    color: #d1d5db;
+  color: #d1d5db;
 }
 
 .footer__support-link:hover,
 .footer__support-link:focus {
-    color: var(--primary-color);
-    transition: ease 250ms;
+  color: var(--primary-color);
+  transition: ease 250ms;
 }
 
 /* Footer Copyright */
 .footer__copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    border-top: 1px solid #374151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #374151;
 }
 
 .footer__copyright-text {
-    padding-top: var(--space-xl);
-    color: #d1d5db;
+  padding-top: var(--space-xl);
+  color: #d1d5db;
+}
+
+/* Large Mobile */
+@media screen and (min-width: 40rem) {
+  footer {
+    padding-inline: var(--space-lg);
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 48rem) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    grid-template-areas:
+      "fi fi fl fs"
+      "fc fc fc fc";
+  }
+
+  .footer__info {
+    grid-area: fi;
+  }
+
+  .footer__links {
+    grid-area: fl;
+  }
+
+  .footer__support {
+    grid-area: fs;
+  }
+
+  .footer__copyright {
+    grid-area: fc;
+  }
+}
+
+/* Notebook */
+@media screen and (min-width: 64rem) {
+  footer {
+    padding-inline: var(--space-xl);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 80rem) {
+  footer {
+    padding-inline: calc(var(--space-xl) + var(--space-4xl));
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 96rem) {
+  footer {
+    padding-inline: calc(var(--space-xl) + 40rem);
+  }
 }
