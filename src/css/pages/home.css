@@ -100,7 +100,6 @@ main {
 
 .features__card-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-flow: column wrap;
   width: 100%;
@@ -109,7 +108,6 @@ main {
 
 .features__card {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: var(--space-xl);
@@ -169,7 +167,6 @@ main {
 
 .about__card-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: var(--space-lg);
@@ -260,6 +257,10 @@ main {
   .hero__button {
     width: auto;
   }
+
+  .features {
+    padding-inline: var(--space-lg);
+  }
 }
 
 /* Tablets */
@@ -272,6 +273,19 @@ main {
   .hero__subtitle {
     font-size: var(--font-2xl);
   }
+
+  .features__title {
+    font-size: var(--font-4xl);
+  }
+
+  .features__card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .features__card {
+    height: 316px;
+  }
 }
 
 /* Notebook */
@@ -283,6 +297,10 @@ main {
   .hero__subtitle {
     margin-inline: calc(var(--space-4xl) + var(--space-md));
   }
+
+  .features {
+    padding-inline: var(--space-xl);
+  }
 }
 
 /* Desktop */
@@ -293,18 +311,25 @@ main {
 
   .hero__subtitle {
     margin-inline: calc(var(--space-4xl) + var(--space-4xl) + var(--space-3xl));
-
   }
 
   .hero__button {
     font-size: var(--font-xl);
     font-weight: 500;
   }
+
+  .features {
+    padding-inline: calc(var(--space-4xl) + var(--space-xl));
+  }
 }
 
 /* Large Screens */
 @media screen and (min-width: 96rem) {
   .hero {
+    padding-inline: calc(40rem + var(--space-xl));
+  }
+
+  .features {
     padding-inline: calc(40rem + var(--space-xl));
   }
 }

@@ -1,5 +1,4 @@
 # Home
-- Features Section (Tablet, Desktop, Large Desktop)
 - About Section (Tablet, Desktop, Large Desktop)
 
 # Footer
