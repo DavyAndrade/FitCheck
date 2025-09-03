@@ -8,15 +8,15 @@ O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, of
 ---
 
 ## Índice 📑
-- [Visão Geral 🩺](#visão-geral-)
-- [Funcionalidades ⚙️](#funcionalidades-)
-- [Instalação 💻](#instalação-)
-- [Como Usar 🧑‍💻](#como-usar-)
-- [Estrutura do Projeto 🗂️](#estrutura-do-projeto-)
-- [Tecnologias Utilizadas 🛠️](#tecnologias-utilizadas-)
-- [Organização do Código 🧩](#organização-do-código-)
-- [Contribuição 🤝](#contribuição-)
-- [Licença 📄](#licença-)
+- [Visão Geral](#visão-geral-)
+- [Funcionalidades](#funcionalidades-)
+- [Instalação](#instalação-)
+- [Como Usar ](#como-usar-)
+- [Estrutura do Projeto](#estrutura-do-projeto-)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas-)
+- [Organização do Código](#organização-do-código-)
+- [Contribuição](#contribuição-)
+- [Licença](#licença-)
 
 ---
 

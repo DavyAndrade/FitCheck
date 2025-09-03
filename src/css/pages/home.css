@@ -46,26 +46,24 @@ main {
   gap: var(--space-md);
 }
 
-.hero__buttons button {
+.hero__button {
   width: 100%;
   padding: 0.75rem var(--space-xl);
   border-radius: 8px;
   font-weight: 600;
   line-height: var(--line-normal);
-}
-
-.hero__buttons .hero__button--primary {
-  background-color: #fff;
   color: var(--primary-color);
-}
-
-.hero__buttons .hero__button--primary:hover,
-.hero__buttons .hero__button--primary:focus {
-  opacity: 0.9;
+  background-color: #fff;
   transition: ease 250ms;
 }
 
-.hero__buttons .hero__button--secondary {
+.hero__buttons:hover,
+.hero__buttons:focus {
+  opacity: 0.9;
+}
+
+.hero__button--secondary {
+  background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
 }
@@ -247,4 +245,66 @@ main {
 
 .about__card-item--soon {
   opacity: 0.5;
+}
+
+/* Large Mobile */
+@media screen and (min-width: 40rem) {
+  .hero {
+    padding-inline: var(--space-lg);
+  }
+
+  .hero__buttons {
+    flex-direction: row;
+  }
+
+  .hero__button {
+    width: auto;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 48rem) {
+  .hero__title {
+    font-size: var(--font-6xl);
+    line-height: var(--line-tight);
+  }
+
+  .hero__subtitle {
+    font-size: var(--font-2xl);
+  }
+}
+
+/* Notebook */
+@media screen and (min-width: 64rem) {
+  .hero {
+    padding-inline: var(--space-xl);
+  }
+
+  .hero__subtitle {
+    margin-inline: calc(var(--space-4xl) + var(--space-md));
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 80rem) {
+  .hero {
+    padding-inline: calc(var(--space-4xl) + var(--space-xl));
+  }
+
+  .hero__subtitle {
+    margin-inline: calc(var(--space-4xl) + var(--space-4xl) + var(--space-3xl));
+
+  }
+
+  .hero__button {
+    font-size: var(--font-xl);
+    font-weight: 500;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 96rem) {
+  .hero {
+    padding-inline: calc(40rem + var(--space-xl));
+  }
 }
