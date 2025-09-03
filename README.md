@@ -104,7 +104,7 @@ FitCheck/
 
 ## Padrão Visual e Responsividade
 
-- **Minimalista, azul/verde:** Visual limpo, moderno e acessível
+- **Minimalista e verde:** Visual limpo, moderno e acessível
 - **Mobile First:** Layout adaptável para diferentes tamanhos de tela (mobile, tablet, desktop, large desktop)
 - **Acessibilidade:** Uso de ícones, contraste e navegação por teclado
 

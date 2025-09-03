@@ -269,3 +269,52 @@ main {
 .content__description {
   color: #4b5563;
 }
+
+/* Large Mobile */
+@media screen and (min-width: 40rem) {
+  main {
+    padding-inline: var(--space-lg);
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 48rem) {
+  .calculator__title {
+    font-size: var(--font-4xl);
+  }
+
+  .calculator__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    gap: var(--space-xl);
+  }
+
+  .about__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    column-gap: var(--space-xl);
+  }
+}
+
+/* Notebook */
+@media screen and (min-width: 64rem) {
+  main {
+    padding-inline: calc(var(--space-xl) + var(--space-3xl));
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 80rem) {
+  main {
+    padding-inline: calc(var(--space-3xl) + var(--space-4xl) * 3);
+  }
+}
+
+@media screen and (min-width: 96rem) {
+  main {
+    min-height: 100vh;
+    padding: 0 calc(var(--space-4xl) * 10 + var(--space-xl) * 2);
+  }
+}
