@@ -314,7 +314,9 @@ main {
 
 @media screen and (min-width: 96rem) {
   main {
-    min-height: 100vh;
+    height: 100vh;
     padding: 0 calc(var(--space-4xl) * 10 + var(--space-xl) * 2);
+    gap: var(--space-2xl);
+
   }
 }
