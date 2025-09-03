@@ -1,6 +1,3 @@
-# Home
-- About Section (Tablet, Desktop, Large Desktop)
-
 # Footer
 - Realizar a limpeza de CSS com estilizações semelhantes (?)
 
