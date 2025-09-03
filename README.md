@@ -7,8 +7,9 @@ O **FitCheck** é uma plataforma web responsiva e minimalista para monitoramento
 ## Índice
 
 - [Visão Geral](#visão-geral)
+- [Acesso Online](#acesso-online)
+- [Instalação Local (Opcional)](#instalação-local-opcional)
 - [Funcionalidades](#funcionalidades)
-- [Instalação](#instalação)
 - [Como Usar](#como-usar)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -18,7 +19,7 @@ O **FitCheck** é uma plataforma web responsiva e minimalista para monitoramento
 - [Contribuição](#contribuição)
 - [Licença](#licença)
 
-## Funcionalidades ⚙️
+## Funcionalidades
 
 - **Calculadora de IMC:**
   - Calcula o Índice de Massa Corporal, exibe classificação e dicas de saúde.
@@ -31,13 +32,13 @@ O **FitCheck** é uma plataforma web responsiva e minimalista para monitoramento
 - **Privacidade:**
   - Todos os cálculos são feitos localmente, sem coleta de dados pessoais.
 
-## Acesso Online 🚀
+## Acesso Online
 
 Você pode acessar o FitCheck diretamente pelo navegador, sem instalar nada, através do GitHub Pages:
 
 **[Acesse FitCheck Online](https://davyandrade.github.io/FitCheck/)**
 
-## Instalação Local (Opcional) 💻
+## Instalação Local (Opcional)
 
 Se preferir rodar localmente:
 
@@ -57,7 +58,7 @@ Se preferir rodar localmente:
 2. Use o menu para navegar entre as calculadoras de IMC e PCI.
 3. Preencha os formulários e visualize os resultados instantaneamente.
 
-## Estrutura do Projeto 🗂️
+## Estrutura do Projeto
 
 ```
 FitCheck/
@@ -88,33 +89,33 @@ FitCheck/
 └── ...
 ```
 
-## Tecnologias Utilizadas 🛠️
+## Tecnologias Utilizadas
 
 - **HTML5** — Estruturação das páginas
 - **CSS3** — Estilização, responsividade e layout moderno
 - **JavaScript** — Funcionalidades interativas e cálculos dinâmicos
 - **FontAwesome** — Ícones para melhor experiência visual
 
-## Organização do Código 🧩
+## Organização do Código
 
 - **Componentização:** Navbar e Footer são carregados dinamicamente via JavaScript (SPA-like experience)
 - **Separação de responsabilidades:** Cada funcionalidade/calculadora possui seu próprio arquivo JS e CSS
 - **Padrão BEM:** Nomenclatura CSS para facilitar manutenção e escalabilidade
 
-## Padrão Visual e Responsividade 🎨
+## Padrão Visual e Responsividade
 
 - **Minimalista, azul/verde:** Visual limpo, moderno e acessível
 - **Mobile First:** Layout adaptável para diferentes tamanhos de tela (mobile, tablet, desktop, large desktop)
 - **Acessibilidade:** Uso de ícones, contraste e navegação por teclado
 
-## Próximos Passos 🚧
+## Próximos Passos
 
 - Melhorar responsividade para tablets e desktops
 - Refatorar e limpar CSS de componentes semelhantes
 - Ajustar detalhes do padrão BEM
 - Adicionar novas calculadoras: Taxa Metabólica Basal, Hidratação (em breve)
 
-## Contribuição 🤝
+## Contribuição
 
 Contribuições são bem-vindas! Para contribuir:
 
@@ -125,6 +126,6 @@ Contribuições são bem-vindas! Para contribuir:
    ```
 3. Commit suas alterações e envie um pull request.
 
-## Licença 📄
+## Licença
 
 Projeto desenvolvido para fins educacionais. Sinta-se livre para usar, modificar e compartilhar!
