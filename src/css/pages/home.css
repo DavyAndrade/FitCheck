@@ -175,8 +175,6 @@ main {
 
 .about__card {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   flex-direction: column;
   text-align: left;
   width: 100%;
@@ -261,6 +259,10 @@ main {
   .features {
     padding-inline: var(--space-lg);
   }
+
+  .about {
+    padding-inline: var(--space-lg);
+  }
 }
 
 /* Tablets */
@@ -286,6 +288,20 @@ main {
   .features__card {
     height: 316px;
   }
+
+  .about__title {
+    font-size: var(--font-4xl);
+  }
+
+  .about__card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--space-2xl);
+  }
+
+  .about__card {
+    min-height: 200px;
+  }
 }
 
 /* Notebook */
@@ -300,6 +316,10 @@ main {
 
   .features {
     padding-inline: var(--space-xl);
+  }
+
+  .about {
+    padding-inline: calc(var(--space-xl) + var(--space-3xl));
   }
 }
 
@@ -321,6 +341,14 @@ main {
   .features {
     padding-inline: calc(var(--space-4xl) + var(--space-xl));
   }
+
+  .about {
+    padding-inline: calc(var(--space-4xl) * 3 + var(--space-3xl));
+  }
+
+  .about__card-container {
+    gap: var(--space-2xl);
+  }
 }
 
 /* Large Screens */
@@ -331,5 +359,9 @@ main {
 
   .features {
     padding-inline: calc(40rem + var(--space-xl));
+  }
+
+  .about {
+    padding-inline: calc(40rem + var(--space-3xl));
   }
 }

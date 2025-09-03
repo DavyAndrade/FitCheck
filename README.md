@@ -1,11 +1,7 @@
-
-
 # FitCheck — Documentação Oficial 🏥
 
 ## Visão Geral 🩺
 O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, oferecendo ferramentas como calculadora de IMC e calculadora de Peso Corporal Ideal (PCI). O projeto prioriza privacidade, usabilidade e resultados baseados em padrões médicos reconhecidos.
-
----
 
 ## Índice 📑
 - [Visão Geral](#visão-geral-)
@@ -18,9 +14,6 @@ O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, of
 - [Contribuição](#contribuição-)
 - [Licença](#licença-)
 
----
-
-
 ## Funcionalidades ⚙️
 
 - **Calculadora de IMC:**
@@ -31,9 +24,6 @@ O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, of
 	- Layout adaptável para dispositivos móveis e desktop, com navegação intuitiva.
 - **Privacidade:**
 	- Todos os cálculos são realizados localmente no navegador, sem coleta de dados pessoais.
-
----
-
 
 ## Instalação 💻
 
@@ -47,16 +37,11 @@ O **FitCheck** é uma plataforma web responsiva para monitoramento de saúde, of
 	 ```
 3. Abra o arquivo `index.html` no seu navegador preferido.
 
----
-
-
 ## Como Usar 🧑‍💻
 
 1. Acesse a landing page principal (`index.html`).
 2. Navegue pelo menu para acessar as calculadoras de IMC e PCI.
 3. Preencha os formulários com seus dados e visualize os resultados instantaneamente.
-
----
 
 
 ## Estrutura do Projeto 🗂️
@@ -97,8 +82,6 @@ FitCheck/
 - **JavaScript** — Funcionalidades interativas e cálculos dinâmicos.
 - **FontAwesome** — Ícones para melhor experiência visual.
 
----
-
 
 ## Organização do Código 🧩
 
@@ -109,9 +92,6 @@ FitCheck/
 - **Separação de responsabilidades:**
 	- Cada funcionalidade/calculadora possui seu próprio arquivo JS e CSS.
 
----
-
-
 ## Contribuição 🤝
 
 Contribuições são bem-vindas! Para contribuir:
@@ -121,9 +101,6 @@ Contribuições são bem-vindas! Para contribuir:
 	 git checkout -b minha-feature
 	 ```
 3. Commit suas alterações e envie um pull request.
-
----
-
 
 ## Licença 📄
 
