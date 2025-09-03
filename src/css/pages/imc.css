@@ -286,15 +286,13 @@ main {
   .calculator__card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0;
     gap: var(--space-xl);
   }
 
   .about__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-    column-gap: var(--space-xl);
+    gap: var(--space-xl);
   }
 }
 

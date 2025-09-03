@@ -7,8 +7,7 @@ export default function loadNavbar() {
             </a>
 
             <!-- Apenas Mobile -->
-            <button class="navbar__toggle" onclick="toggleDropdown()" aria-expanded="false" aria-controls="dropdownMenu"
-                id="mobile">
+            <button class="navbar__toggle" id="toggleButton" aria-expanded="false" aria-controls="dropdownMenu">
                 <span class="sr-only">Abrir menu</span>
                 <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>

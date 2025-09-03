@@ -133,7 +133,7 @@ header {
 
 /* Dispositivos Tablet */
 @media screen and (min-width: 48rem) {
-  #mobile,
+  #toggleButton,
   #dropdownMenu {
     display: none;
     margin: 0;
